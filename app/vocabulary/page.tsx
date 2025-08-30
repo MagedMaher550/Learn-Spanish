@@ -29,16 +29,18 @@ export default function Page() {
 
       {/* Header Section */}
       <div className="px-6 md:px-12 lg:px-16 py-8">
-        <h1 className="text-3xl font-bold tracking-tight mb-2">Vocabulary</h1>
+        <h1 className="text-3xl font-bold tracking-tight mb-2">
+          {t("vocabulary")}
+        </h1>
         <p className="text-muted-foreground text-lg mb-6">
-          Search and explore all vocabulary words from your lessons
+          {t("Search and explore all vocabulary words from your lessons")}
         </p>
 
         {/* Search Bar */}
         <div className="relative max-w-4xl">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground h-5 w-5" />
           <Input
-            placeholder="Search in Spanish or Arabic... / ابحث بالإسبانية أو العربية..."
+            placeholder={t("Search in Spanish or Arabic...")}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="pl-10 w-full text-lg"
@@ -57,8 +59,8 @@ export default function Page() {
         ) : (
           <p className="text-muted-foreground text-center text-lg mt-12">
             {searchTerm.trim()
-              ? "No matching words found."
-              : "Start typing to search your vocabulary."}
+              ? t("No matching words found.")
+              : t("Start typing to search your vocabulary.")}
           </p>
         )}
       </div>

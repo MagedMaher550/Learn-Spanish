@@ -7,7 +7,8 @@ export const translations = {
 
     // Main content
     title: "Learn Spanish from Scratch",
-    subtitle: "Master Spanish step by step with interactive lessons, audio, and video content",
+    subtitle:
+      "Master Spanish step by step with interactive lessons, audio, and video content",
     startLearning: "Start Learning",
     continueLesson: "Continue Lesson",
 
@@ -33,6 +34,14 @@ export const translations = {
     language: "Language",
     english: "English",
     arabic: "العربية",
+
+    // Vocabulary Page
+    "Search and explore all vocabulary words from your lessons":
+      "Search and explore all vocabulary words from your lessons",
+    "Search in Spanish or Arabic...": "Search in Spanish or Arabic...",
+    "No matching words found.": "No matching words found.",
+    "Start typing to search your vocabulary.":
+      "Start typing to search your vocabulary.",
   },
   ar: {
     // Navigation
@@ -49,6 +58,7 @@ export const translations = {
     // Lesson content
     lesson: "درس",
     vocabulary: "المفردات",
+    Vocabulary: "المفردات",
     grammar: "القواعد",
     audio: "صوت",
     video: "فيديو",
@@ -68,8 +78,17 @@ export const translations = {
     language: "اللغة",
     english: "English",
     arabic: "العربية",
-  },
-} as const
 
-export type Language = keyof typeof translations
-export type TranslationKey = keyof typeof translations.en
+    // Vocabulary Page
+    "Search and explore all vocabulary words from your lessons":
+      "ابحث واستكشف جميع كلمات المفردات من دروسك",
+
+    "Search in Spanish or Arabic...": "ابحث بالإسبانية أو العربية...",
+    "No matching words found.": "لم يتم العثور على كلمات مطابقة.",
+    "Start typing to search your vocabulary.":
+      "ابدأ بالكتابة للبحث في مفرداتك.",
+  },
+} as const;
+
+export type Language = keyof typeof translations;
+export type TranslationKey = keyof typeof translations.en;
