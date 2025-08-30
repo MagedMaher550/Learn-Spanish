@@ -35,26 +35,14 @@ export function VocabularyCard({ vocabulary }: VocabularyCardProps) {
               /{vocabulary.pronunciation}/
             </p>
             <div className="flex justify-center gap-2">
-              {vocabulary.audioUrl ? (
-                <div onClick={(e) => e.stopPropagation()}>
-                  <AudioPlayer
-                    src={vocabulary.audioUrl}
-                    compact={true}
-                    showTitle={false}
-                  />
-                </div>
-              ) : (
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="hover:bg-primary/10 transition-colors bg-transparent"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                  }}
-                >
-                  <Volume2 className="h-4 w-4" />
-                </Button>
-              )}
+              <div onClick={(e) => e.stopPropagation()}>
+                <AudioPlayer
+                  src={`/audio/vocab/${vocabulary.spanish}.mp3`}
+                  compact={true}
+                  showTitle={false}
+                />
+              </div>
+
               <Button
                 size="sm"
                 variant="outline"
