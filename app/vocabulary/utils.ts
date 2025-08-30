@@ -10,13 +10,10 @@ export default function weightedSearch(query: string): Vocabulary[] {
     .map((vocab) => {
       let score = 0;
 
-      // Higher weights for Spanish and English
-      if (vocab.spanish.toLowerCase().includes(lowerQuery)) score += 5;
-      if (vocab.english.toLowerCase().includes(lowerQuery)) score += 4;
-
-      // Lower weights for Arabic and pronunciation
-      if (vocab.arabic.toLowerCase().includes(lowerQuery)) score += 2;
-      if (vocab.pronunciation.toLowerCase().includes(lowerQuery)) score += 1;
+      // Apply weighted search only to Spanish
+      if (vocab.spanish.toLowerCase().includes(lowerQuery)) {
+        score += 5;
+      }
 
       return { vocab, score };
     })
