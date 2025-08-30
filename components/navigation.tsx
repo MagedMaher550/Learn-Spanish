@@ -20,8 +20,6 @@ export function Navigation() {
   const { t, language } = useLocalization();
   const pathname = usePathname();
 
-  console.log(language);
-
   const navItems = [
     { href: "/", label: t("home"), icon: Home },
     { href: "/lessons", label: t("lessons"), icon: BookOpen },
@@ -84,7 +82,7 @@ export function Navigation() {
                 >
                   {language === "ar" && <div style={{ margin: "4px 0px" }} />}
                   <SheetHeader>
-                    <SheetTitle>{t('Menu')}</SheetTitle>
+                    <SheetTitle>{t("Menu")}</SheetTitle>
                   </SheetHeader>
                   <div className="mt-6 flex flex-col gap-2">
                     {navItems.map((item) => {
