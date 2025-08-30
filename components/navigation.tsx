@@ -4,22 +4,23 @@ import { useLocalization } from "@/contexts/localization-context";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Home, Menu } from "lucide-react";
+import { BookOpen, Home, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"; // shadcn/ui sheet component
-import useViewPortWidth from "@/hooks/use-viewport-width";
 
 export function Navigation() {
-  const { t } = useLocalization();
+  const { t, language } = useLocalization();
   const pathname = usePathname();
-  const { viewPortWidth } = useViewPortWidth();
+
+  console.log(language);
 
   const navItems = [
     { href: "/", label: t("home"), icon: Home },
@@ -77,9 +78,13 @@ export function Navigation() {
                     <Menu className="h-6 w-6" />
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="left" className="w-64">
+                <SheetContent
+                  side={language === "ar" ? "right" : "left"}
+                  className="w-64"
+                >
+                  {language === "ar" && <div style={{ margin: "4px 0px" }} />}
                   <SheetHeader>
-                    <SheetTitle>Menu</SheetTitle>
+                    <SheetTitle>{t('Menu')}</SheetTitle>
                   </SheetHeader>
                   <div className="mt-6 flex flex-col gap-2">
                     {navItems.map((item) => {

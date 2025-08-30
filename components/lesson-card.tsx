@@ -43,8 +43,9 @@ export function LessonCard({ lesson, onStartLesson }: LessonCardProps) {
             {lesson.level}
           </Badge>
           <div className="flex items-center gap-1 text-sm text-muted-foreground">
-            <Clock className="h-4 w-4" />
-            {lesson.estimatedTime} min
+            {language === "en" && <Clock className="h-4 w-4" />}
+            {lesson.estimatedTime} {t("min")}
+            {language === "ar" && <Clock className="h-4 w-4" />}
           </div>
         </div>
       </CardHeader>
@@ -53,7 +54,10 @@ export function LessonCard({ lesson, onStartLesson }: LessonCardProps) {
           <div className="flex items-center justify-between text-sm">
             <span className="flex items-center gap-1">
               <BookOpen className="h-4 w-4" />
-              {lesson.vocabulary.length} {t("vocabulary")} words
+              {language === "ar" ? t("vocabulary") : ""}{" "}
+              {lesson.vocabulary.length}{" "}
+              {language === "en" ? t("vocabulary") : ""}
+              {language === "en" ? "words" : ""}
             </span>
           </div>
 

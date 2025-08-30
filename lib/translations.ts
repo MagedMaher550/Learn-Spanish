@@ -11,6 +11,8 @@ export const translations = {
       "Master Spanish step by step with interactive lessons, audio, and video content",
     startLearning: "Start Learning",
     continueLesson: "Continue Lesson",
+    "Choose a lesson to start learning Spanish vocabulary and grammar.": "Choose a lesson to start learning Spanish vocabulary and grammar.",
+    "Spanish": "Spanish",
 
     // Lesson content
     lesson: "Lesson",
@@ -35,6 +37,9 @@ export const translations = {
     english: "English",
     arabic: "العربية",
 
+    // lessons
+    'min': 'min',
+
     // Vocabulary Page
     "Search and explore all vocabulary words from your lessons":
       "Search and explore all vocabulary words from your lessons",
@@ -42,6 +47,8 @@ export const translations = {
     "No matching words found.": "No matching words found.",
     "Start typing to search your vocabulary.":
       "Start typing to search your vocabulary.",
+    // hamburger menu
+    "Menu": "Menu"
   },
   ar: {
     // Navigation
@@ -54,7 +61,8 @@ export const translations = {
     subtitle: "أتقن الإسبانية خطوة بخطوة مع دروس تفاعلية ومحتوى صوتي ومرئي",
     startLearning: "ابدأ التعلم",
     continueLesson: "متابعة الدرس",
-
+    "Choose a lesson to start learning Spanish vocabulary and grammar.": "اختر درسًا لتبدأ في تعلم مفردات وقواعد اللغة الإسبانية.",
+    "Spanish": "الاسبانية",
     // Lesson content
     lesson: "درس",
     vocabulary: "المفردات",
@@ -79,6 +87,9 @@ export const translations = {
     english: "English",
     arabic: "العربية",
 
+    // lessons
+    'min': 'دقيقة',
+
     // Vocabulary Page
     "Search and explore all vocabulary words from your lessons":
       "ابحث واستكشف جميع كلمات المفردات من دروسك",
@@ -87,6 +98,9 @@ export const translations = {
     "No matching words found.": "لم يتم العثور على كلمات مطابقة.",
     "Start typing to search your vocabulary.":
       "ابدأ بالكتابة للبحث في مفرداتك.",
+
+    // hamburger menu
+    "Menu": "القائمة"
   },
 } as const;
 
