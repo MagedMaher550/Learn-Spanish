@@ -5,9 +5,9 @@ import { Navigation } from "@/components/navigation";
 import { Input } from "@/components/ui/input";
 import React, { useEffect, useState } from "react";
 import { Search } from "lucide-react";
-import weightedSearch from "./utils";
 import { Vocabulary } from "@/types/lesson";
 import { VocabularyCard } from "@/components/vocabulary-card";
+import { weightedSearch } from "@/utils/utils";
 
 export default function Page() {
   const { t } = useLocalization();

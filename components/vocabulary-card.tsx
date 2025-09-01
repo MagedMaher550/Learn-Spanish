@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { AudioPlayer } from "@/components/audio-player";
 import { Volume2, RotateCcw } from "lucide-react";
 import type { Vocabulary } from "@/types/lesson";
+import { slugifyAudioFilename } from "@/utils/utils";
 
 interface VocabularyCardProps {
   vocabulary: Vocabulary;
@@ -35,9 +36,25 @@ export function VocabularyCard({ vocabulary }: VocabularyCardProps) {
               /{vocabulary.pronunciation}/
             </p>
             <div className="flex justify-center gap-2">
-              <div onClick={(e) => e.stopPropagation()}>
+              <div
+                onClick={(e) => {
+                  
+                  console.log(`/audio/vocab/${vocabulary.spanish}.mp3`);
+                  
+                  console.log(
+                    `/audio/vocab/${slugifyAudioFilename(
+                      vocabulary.spanish
+                    )}.mp3`
+                  );
+
+                  return e.stopPropagation();
+                }}
+              >
                 <AudioPlayer
-                  src={`/audio/vocab/${vocabulary.spanish}.mp3`}
+                  // src={`/audio/vocab/${vocabulary.spanish}.mp3`}
+                  src={`/audio/vocab/${slugifyAudioFilename(
+                    vocabulary.spanish
+                  )}.mp3`}
                   compact={true}
                   showTitle={false}
                 />

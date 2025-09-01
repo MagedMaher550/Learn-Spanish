@@ -1,6 +1,7 @@
 import type { LessonContent } from "@/types/lesson";
 import lesson_one_vocab from "./vocabulary/lesson_1";
 import lesson_two_vocab from "./vocabulary/lesson_2";
+import lesson_three_vocab from "./vocabulary/lesson_3";
 
 export const lessons: LessonContent[] = [
   {
@@ -35,5 +36,21 @@ export const lessons: LessonContent[] = [
     estimatedTime: 75,
     vocabulary: lesson_two_vocab,
     grammarPdfUrl: "/pdfs/grammar/lesson-2-grammar.pdf",
+  },
+  {
+    id: "lesson-3",
+    title: {
+      english: "Nationalities and verbs",
+      arabic: "الجنسيات والأفعال",
+    },
+    description: {
+      english: "Learn to how to pronunce nationalities and verbs in Spanish",
+      arabic: "تعلم كيفية نطق الجنسيات والأفعال بالإسبانية",
+    },
+    level: "A1.1",
+    order: 2,
+    estimatedTime: 105,
+    vocabulary: lesson_three_vocab,
+    grammarPdfUrl: "/pdfs/grammar/lesson-3-grammar.pdf",
   },
 ];
