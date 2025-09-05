@@ -2,6 +2,7 @@ import type { LessonContent } from "@/types/lesson";
 import lesson_one_vocab from "./vocabulary/lesson_1";
 import lesson_two_vocab from "./vocabulary/lesson_2";
 import lesson_three_vocab from "./vocabulary/lesson_3";
+import lesson_four_vocab from "./vocabulary/lesson_4";
 
 export const lessons: LessonContent[] = [
   {
@@ -52,5 +53,22 @@ export const lessons: LessonContent[] = [
     estimatedTime: 105,
     vocabulary: lesson_three_vocab,
     grammarPdfUrl: "/pdfs/grammar/lesson-3-grammar.pdf",
+  },
+  {
+    id: "lesson-4",
+    title: {
+      english: "Tha class",
+      arabic: "الفصل",
+    },
+    description: {
+      english: "This lesson is about masculine, feminine, plural, and the indefinite and definite articles.",
+      arabic: "الدرس يتناول المذكر والمؤنث والجمع وأدوات النكرة والمعرفة.",
+    },
+    level: "A1.1",
+    order: 2,
+    estimatedTime: 115,
+    vocabulary: lesson_four_vocab,
+    grammarPdfUrl: undefined,
+    // grammarPdfUrl: "/pdfs/grammar/lesson-3-grammar.pdf",
   },
 ];
