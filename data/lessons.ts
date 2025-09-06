@@ -68,7 +68,6 @@ export const lessons: LessonContent[] = [
     order: 2,
     estimatedTime: 115,
     vocabulary: lesson_four_vocab,
-    grammarPdfUrl: undefined,
-    // grammarPdfUrl: "/pdfs/grammar/lesson-3-grammar.pdf",
+    grammarPdfUrl: "/pdfs/grammar/lesson-4-grammar.pdf",
   },
 ];
