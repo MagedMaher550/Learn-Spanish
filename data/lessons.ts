@@ -3,6 +3,7 @@ import lesson_one_vocab from "./vocabulary/lesson_1";
 import lesson_two_vocab from "./vocabulary/lesson_2";
 import lesson_three_vocab from "./vocabulary/lesson_3";
 import lesson_four_vocab from "./vocabulary/lesson_4";
+import lesson_five_vocab from "./vocabulary/lesson_5";
 
 export const lessons: LessonContent[] = [
   {
@@ -70,4 +71,21 @@ export const lessons: LessonContent[] = [
     vocabulary: lesson_four_vocab,
     grammarPdfUrl: "/pdfs/grammar/lesson-4-grammar.pdf",
   },
+  {
+    id: "lesson-5",
+    title: {
+      english: "Professions",
+      arabic: "المهن",
+    },
+    description: {
+      english: "This lesson is about common professions and the places where people work.",
+      arabic: "الدرس يتناول المهن الشائعة وأماكن العمل في اللغة الاسبانية.",
+    },
+    level: "A1.1",
+    order: 2,
+    estimatedTime: 100,
+    vocabulary: lesson_five_vocab,
+    grammarPdfUrl: undefined,
+  }
+
 ];
