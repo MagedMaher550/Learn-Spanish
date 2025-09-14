@@ -4,6 +4,7 @@ import lesson_two_vocab from "./vocabulary/lesson_2";
 import lesson_three_vocab from "./vocabulary/lesson_3";
 import lesson_four_vocab from "./vocabulary/lesson_4";
 import lesson_five_vocab from "./vocabulary/lesson_5";
+import lesson_six_vocab from "./vocabulary/lesson_6";
 
 export const lessons: LessonContent[] = [
   {
@@ -86,6 +87,23 @@ export const lessons: LessonContent[] = [
     estimatedTime: 100,
     vocabulary: lesson_five_vocab,
     grammarPdfUrl: undefined,
+  },
+  {
+    id: "lesson-6",
+    title: {
+      english: "Colors and Questions",
+      arabic: "الألوان والأسئلة",
+    },
+    description: {
+      english: "This lesson covers common colors and basic question words in Spanish.",
+      arabic: "الدرس يتناول الألوان الشائعة وأدوات الاستفهام في اللغة الإسبانية.",
+    },
+    level: "A1.1",
+    order: 2,
+    estimatedTime: 55,
+    vocabulary: lesson_six_vocab,
+    grammarPdfUrl: "/pdfs/grammar/lesson-6-grammar.pdf",
   }
+
 
 ];
