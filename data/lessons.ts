@@ -5,6 +5,7 @@ import lesson_three_vocab from "./vocabulary/lesson_3";
 import lesson_four_vocab from "./vocabulary/lesson_4";
 import lesson_five_vocab from "./vocabulary/lesson_5";
 import lesson_six_vocab from "./vocabulary/lesson_6";
+import lesson_seven_vocab from "./vocabulary/lesson_7";
 
 export const lessons: LessonContent[] = [
   {
@@ -103,7 +104,24 @@ export const lessons: LessonContent[] = [
     estimatedTime: 55,
     vocabulary: lesson_six_vocab,
     grammarPdfUrl: "/pdfs/grammar/lesson-6-grammar.pdf",
+  },
+  {
+    id: "lesson-7",
+    title: {
+      english: "Present Simple Tense",
+      arabic: "زمن المضارع البسيط",
+    },
+    description: {
+      english: "This lesson introduces the present simple tense in Spanish, focusing on common verbs and daily routine expressions.",
+      arabic: "هذا الدرس يشرح زمن المضارع البسيط في اللغة الإسبانية مع التركيز على الأفعال الشائعة والتعبيرات اليومية.",
+    },
+    level: "A1.1",
+    order: 7,
+    estimatedTime: 70,
+    vocabulary: lesson_seven_vocab,
+    grammarPdfUrl: "/pdfs/grammar/lesson-7-grammar.pdf",
   }
+
 
 
 ];
