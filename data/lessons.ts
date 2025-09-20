@@ -6,6 +6,7 @@ import lesson_four_vocab from "./vocabulary/lesson_4";
 import lesson_five_vocab from "./vocabulary/lesson_5";
 import lesson_six_vocab from "./vocabulary/lesson_6";
 import lesson_seven_vocab from "./vocabulary/lesson_7";
+import lesson_eight_vocab from "./vocabulary/lesson_8";
 
 export const lessons: LessonContent[] = [
   {
@@ -120,8 +121,23 @@ export const lessons: LessonContent[] = [
     estimatedTime: 70,
     vocabulary: lesson_seven_vocab,
     grammarPdfUrl: "/pdfs/grammar/lesson-7-grammar.pdf",
+  },
+  {
+    id: "lesson-8",
+    title: {
+      english: "Numbers and ownership",
+      arabic: "الأعداد وفعل الامتلاك Tener",
+    },
+    description: {
+      english: "This lesson covers numbers from one to one hundred ninety-nine in Spanish, and introduces the verb 'tener'",
+      arabic: "هذا الدرس يتناول الأعداد من واحد إلى مائة وتسعة وتسعين في اللغة الإسبانية، ويشرح فعل 'tener' للتعبير عن الامتلاك والحيازة.",
+    },
+    level: "A1.1",
+    order: 7,
+    estimatedTime: 70,
+    vocabulary: lesson_eight_vocab,
+    grammarPdfUrl: "/pdfs/grammar/lesson-8-grammar.pdf",
   }
-
 
 
 ];
