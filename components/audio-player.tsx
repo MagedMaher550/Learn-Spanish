@@ -255,9 +255,14 @@ export function AudioPlayer({
           src={src}
           preload="metadata"
           autoPlay={autoPlay}
+          className="w-full"
         />
 
-        {showTitle && title && <h3 className="font-semibold mb-4">{title}</h3>}
+        {showTitle && title && (
+          <h3 className="font-semibold mb-4 text-center sm:text-left">
+            {title}
+          </h3>
+        )}
 
         <div className="space-y-4">
           {/* Progress Bar */}
@@ -276,7 +281,8 @@ export function AudioPlayer({
           </div>
 
           {/* Controls */}
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            {/* Play/Restart */}
             <div className="flex items-center gap-2">
               <Button size="sm" variant="outline" onClick={restart}>
                 <RotateCcw className="h-4 w-4" />
@@ -290,7 +296,7 @@ export function AudioPlayer({
               </Button>
             </div>
 
-            {/* Volume Control */}
+            {/* Volume */}
             <div className="flex items-center gap-2">
               <Button size="sm" variant="outline" onClick={toggleMute}>
                 {isMuted ? (
@@ -304,14 +310,14 @@ export function AudioPlayer({
                 onValueChange={handleVolumeChange}
                 max={100}
                 step={1}
-                className="w-20"
+                className="w-24 sm:w-20"
               />
             </div>
 
             {/* Speed Control */}
-            <div>
+            <div className="w-full sm:w-auto">
               <select
-                className="border rounded px-2 py-1 text-sm"
+                className="w-full sm:w-auto border rounded px-2 py-1 text-sm"
                 style={{ backgroundColor: "#121212" }}
                 value={playbackRate}
                 onChange={(e) => handleSpeedChange(parseFloat(e.target.value))}

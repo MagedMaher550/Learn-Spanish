@@ -2,7 +2,7 @@
 
 import type React from "react";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { AudioPlayer } from "./audio-player";
 import { slugifyAudioFilename } from "@/utils/utils";
@@ -23,51 +23,51 @@ export function WordTooltip({
   playbackSpeed,
 }: WordTooltipProps) {
   const [isVisible, setIsVisible] = useState(false);
-  const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
 
   const { language } = useLocalization();
 
-  const showTooltip = () => {
-    if (timeoutId) {
-      clearTimeout(timeoutId);
-    }
-    setIsVisible(true);
-  };
+  const toggleTooltip = () => setIsVisible((v) => !v);
 
-  const hideTooltip = () => {
-    const id = setTimeout(() => {
-      setIsVisible(false);
-    }, 150); // Small delay to allow moving to tooltip
-    setTimeoutId(id);
-  };
+  // Close tooltip when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        tooltipRef.current &&
+        !tooltipRef.current.contains(event.target as Node)
+      ) {
+        setIsVisible(false);
+      }
+    };
 
-  const keepTooltipVisible = () => {
-    if (timeoutId) {
-      clearTimeout(timeoutId);
-      setTimeoutId(null);
+    if (isVisible) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
     }
-  };
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isVisible]);
 
   return (
     <span className="relative inline-block">
       <span
         className="cursor-pointer hover:bg-primary/20 hover:text-primary rounded px-1 py-0.5 transition-colors"
-        onMouseEnter={showTooltip}
-        onMouseLeave={hideTooltip}
-        onClick={showTooltip}
+        onClick={toggleTooltip}
       >
         {children}
       </span>
 
       {isVisible && (
         <div
+          ref={tooltipRef}
           className={`absolute z-50 ${
             position === "top"
               ? "-top-2 -translate-y-full"
               : "-bottom-2 translate-y-full"
           } left-1/2 transform -translate-x-1/2`}
-          onMouseEnter={keepTooltipVisible}
-          onMouseLeave={hideTooltip}
         >
           <Card className="bg-card border-border shadow-lg min-w-48">
             <CardContent className="p-3">
@@ -104,7 +104,7 @@ export function WordTooltip({
                 )}
               </div>
 
-              {/* Tooltip arrow */}
+              {/* Tooltip arrow (disabled for now) */}
               {/* <div
                 className={`absolute left-1/2 transform -translate-x-1/2 w-2 h-2 bg-card border-border rotate-45 ${
                   position === "top"

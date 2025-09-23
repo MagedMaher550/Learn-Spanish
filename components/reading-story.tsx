@@ -42,8 +42,6 @@ export function ReadingStory({ story, words, grammar }: ReadingStoryProps) {
     setPlaybackSpeed(nextSpeed as PlaybackSpeed);
   };
 
-  console.log(story);
-
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -84,9 +82,9 @@ export function ReadingStory({ story, words, grammar }: ReadingStoryProps) {
                   <div
                     className={`flex items-center mb-6 rounded-lg ${
                       hydrated
-                        ? viewPortWidth > 375
+                        ? viewPortWidth > 485
                           ? "flex-row justify-between"
-                          : "flex-col-reverse justify-between"
+                          : "flex-col-reverse justify-between bg-red"
                         : "flex-col-reverse justify-between"
                     }`}
                   >
@@ -100,7 +98,7 @@ export function ReadingStory({ story, words, grammar }: ReadingStoryProps) {
                       variant="outline"
                       onClick={handleSpeedChange}
                       className={`flex items-center gap-2 bg-transparent cursor-pointer ${
-                        hydrated && viewPortWidth <= 375 ? "m-8" : "m-0"
+                        hydrated && viewPortWidth <= 485 ? "mb-8" : "mb-0"
                       }`}
                       disabled={!story.fullAudio}
                     >
