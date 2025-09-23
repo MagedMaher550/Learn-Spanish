@@ -24,6 +24,7 @@ export function Navigation() {
     { href: "/", label: t("home"), icon: Home },
     { href: "/lessons", label: t("lessons"), icon: BookOpen },
     { href: "/vocabulary", label: t("vocabulary"), icon: BookOpen },
+    { href: "/paragraphs", label: t("paragraphs"), icon: BookOpen },
   ];
 
   return (

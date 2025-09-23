@@ -38,9 +38,8 @@ export function VocabularyCard({ vocabulary }: VocabularyCardProps) {
             <div className="flex justify-center gap-2">
               <div
                 onClick={(e) => {
-                  
                   console.log(`/audio/vocab/${vocabulary.spanish}.mp3`);
-                  
+
                   console.log(
                     `/audio/vocab/${slugifyAudioFilename(
                       vocabulary.spanish
@@ -55,7 +54,7 @@ export function VocabularyCard({ vocabulary }: VocabularyCardProps) {
                   src={`/audio/vocab/${slugifyAudioFilename(
                     vocabulary.spanish
                   )}.mp3`}
-                  compact={true}
+                  compact
                   showTitle={false}
                 />
               </div>

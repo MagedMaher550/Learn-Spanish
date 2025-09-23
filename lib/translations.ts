@@ -4,6 +4,7 @@ export const translations = {
     home: "Home",
     lessons: "Lessons",
     settings: "Settings",
+    paragraphs: "paragraphs",
 
     // Main content
     title: "Learn Spanish from Scratch",
@@ -55,6 +56,7 @@ export const translations = {
     home: "الرئيسية",
     lessons: "الدروس",
     settings: "الإعدادات",
+    paragraphs: "القطع",
 
     // Main content
     title: "تعلم الإسبانية من الصفر",
