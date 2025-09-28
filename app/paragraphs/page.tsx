@@ -40,15 +40,6 @@ export default function ParagraphsPage() {
                   alt={paragraph.title}
                   className="w-full h-48 object-cover"
                 />
-                <div className="absolute top-3 right-3">
-                  <Button
-                    size="sm"
-                    variant="ghost"
-                    className="bg-black/20 hover:bg-black/40 text-white"
-                  >
-                    <Heart className="h-4 w-4" />
-                  </Button>
-                </div>
               </div>
 
               <CardHeader className="pb-3">
