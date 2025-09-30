@@ -14,6 +14,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 import { PDFViewer } from "@/components/pdf-viewer";
 import { useState } from "react";
+import { lesson_9_grammar } from "@/data/grammarPages";
 
 export default function LessonDetailPage() {
   const params = useParams();
@@ -22,6 +23,8 @@ export default function LessonDetailPage() {
   const [activeTab, setActiveTab] = useState<"vocab" | "grammar">("vocab");
 
   const lesson = lessons.find((l) => l.id === lessonId);
+
+  console.log(lesson)
 
   if (!lesson) {
     return (
@@ -97,13 +100,15 @@ export default function LessonDetailPage() {
                     lesson.title[language === "ar" ? "arabic" : "english"]
                   } - ${t("grammar")}`}
                 />
+              ) : lesson.grammarPageContent ? (
+                <lesson.grammarPageContent />
               ) : (
                 <Card>
                   <CardContent className="text-center py-8">
                     <p className="text-muted-foreground">
                       {language === "ar"
-                        ? "لا يوجد ملف قواعد متاح لهذا الدرس"
-                        : "No grammar PDF available for this lesson"}
+                        ? "لا يوجد محتوي قواعد متاح لهذا الدرس"
+                        : "No grammar content available for this lesson"}
                     </p>
                   </CardContent>
                 </Card>

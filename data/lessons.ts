@@ -7,6 +7,8 @@ import lesson_five_vocab from "./vocabulary/lesson_5";
 import lesson_six_vocab from "./vocabulary/lesson_6";
 import lesson_seven_vocab from "./vocabulary/lesson_7";
 import lesson_eight_vocab from "./vocabulary/lesson_8";
+import lesson_nine_vocab from "./vocabulary/lesson_9";
+import { lesson_9_grammar } from "./grammarPages";
 
 export const lessons: LessonContent[] = [
   {
@@ -137,7 +139,24 @@ export const lessons: LessonContent[] = [
     estimatedTime: 70,
     vocabulary: lesson_eight_vocab,
     grammarPdfUrl: "/pdfs/grammar/lesson-8-grammar.pdf",
+  },
+  {
+    id: "lesson-9",
+    title: {
+      english: "House and prepositions of place",
+      arabic: "مفردات المنزل وحروف الجر للمكان"
+    },
+    description: {
+      english: "This lesson covers essential house vocabulary and introduces prepositions of place to describe the location of objects.",
+      arabic: "هذا الدرس يتناول مفردات المنزل الأساسية ويشرح حروف الجر للمكان لوصف موقع الأشياء."
+    },
+    level: "A1.2",
+    order: 7,
+    estimatedTime: 85,
+    vocabulary: lesson_nine_vocab,
+    grammarPageContent: lesson_9_grammar 
   }
+
 
 
 ];

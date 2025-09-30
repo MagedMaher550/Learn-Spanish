@@ -1,3 +1,5 @@
+import { JSX } from "react"
+
 export interface Vocabulary {
   spanish: string
   english: string
@@ -54,6 +56,7 @@ export interface LessonContent {
   audioUrl?: string
   videoUrl?: string
   grammarPdfUrl?: string // Added grammarPdfUrl field for PDF grammar content
+  grammarPageContent?: React.ComponentType; // 👈 instead of ReactElement
 }
 
 export interface LessonProgress {
