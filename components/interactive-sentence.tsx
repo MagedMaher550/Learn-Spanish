@@ -7,7 +7,7 @@ import { useLocalization } from "@/contexts/localization-context";
 
 interface InteractiveSentenceProps {
   sentence: Sentence;
-  storyWords: Word[];
+  storyWords: Record<string, Word>;
   onWordHover?: (word: Word) => void;
   playbackSpeed: PlaybackSpeed;
 }
@@ -23,9 +23,24 @@ export function InteractiveSentence({
   };
 
   const { language } = useLocalization();
-  const { english, arabic, words, audio } = sentence;
+  const { english, arabic, spanish, audio } = sentence;
 
-  const transformedWords = (words || []).map((word) => storyWords[word]);
+  // Split sentence into words + punctuation
+  const transformedWords = (spanish.match(/[\wáéíóúñ]+|[.,;!?]/g) || []).map(
+    (originalWord) => {
+      const normalizedKey = originalWord.toLowerCase().replace(/[.,;!?]/g, "");
+      const storyWord = storyWords[normalizedKey];
+
+      return {
+        ...(storyWord || {
+          spanish: normalizedKey,
+          english: normalizedKey,
+          arabic: normalizedKey,
+        }),
+        display: originalWord, // keep punctuation/uppercase intact
+      };
+    }
+  );
 
   return (
     <div className="mb-6 p-4 rounded-lg bg-card/50 border border-border">
@@ -33,18 +48,21 @@ export function InteractiveSentence({
         <AudioPlayer src={audio} compact playbackRate={playbackSpeed} />
 
         <div className="flex-1">
-          {/* ⬇ FIX: use div, not p */}
           <div className="text-lg text-foreground mb-2 leading-relaxed flex flex-wrap gap-1">
             {transformedWords.map((word, index) => (
               <span key={index}>
-                <WordTooltip word={word} playbackSpeed={playbackSpeed}>
-                  <span
-                    className="cursor-pointer"
-                    onClick={() => handleWordClick(word)}
-                  >
-                    {word.spanish}
-                  </span>
-                </WordTooltip>
+                {".,;!?".includes(word.display) ? (
+                  word.display // just render punctuation without tooltip
+                ) : (
+                  <WordTooltip word={word} playbackSpeed={playbackSpeed}>
+                    <span
+                      className="cursor-pointer"
+                      onClick={() => handleWordClick(word)}
+                    >
+                      {word.display}
+                    </span>
+                  </WordTooltip>
+                )}
               </span>
             ))}
           </div>

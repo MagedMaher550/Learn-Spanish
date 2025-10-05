@@ -13,7 +13,7 @@ export interface Sentence {
     spanish: string;
     english: string;
     arabic: string;
-    words: Word[];
+    words: Word[] | string[];
     audio: string;
 }
 

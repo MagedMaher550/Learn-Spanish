@@ -18,8 +18,19 @@ const paragraphs = [
         level: "A1.1",
         date: "28 September 2025",
         image:
-            "/story_2_thumbnail.png", // placeholder for now
+            "/story_2_thumbnail.png",
+        estimatedTime: "10 min",
     },
+    {
+        id: 3,
+        title: "La casa de Marta",
+        description: "Marta vive en una casa grande y acogedora. En la cocina hay un frigorífico, una nevera, un horno y una estufa. En la mesa hay cucharas, un tenedor y un cuchillo. En el comedor hay una mesa grande y seis sillas. El salón tiene un sofá, un televisor y una televisión. En el dormitorio hay una cama, una almohada, una manta y una cómoda. Fuera de la casa hay un balcón, una terraza, un jardín y un garaje.",
+        level: "A1.2",
+        date: "5 October 2025",
+        image: "/house_story.jpg",
+        estimatedTime: "30 min",
+    }
+
 ];
 
 export default paragraphs
