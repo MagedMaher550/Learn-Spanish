@@ -8,7 +8,8 @@ import lesson_six_vocab from "./vocabulary/lesson_6";
 import lesson_seven_vocab from "./vocabulary/lesson_7";
 import lesson_eight_vocab from "./vocabulary/lesson_8";
 import lesson_nine_vocab from "./vocabulary/lesson_9";
-import { lesson_9_grammar } from "./grammarPages";
+import { lesson_10_grammar, lesson_9_grammar } from "./grammarPages";
+import lesson_10_vocab from "./vocabulary/lesson_10";
 
 export const lessons: LessonContent[] = [
   {
@@ -154,8 +155,25 @@ export const lessons: LessonContent[] = [
     order: 7,
     estimatedTime: 85,
     vocabulary: lesson_nine_vocab,
-    grammarPageContent: lesson_9_grammar 
+    grammarPageContent: lesson_9_grammar
+  },
+  {
+    id: "lesson-10",
+    title: {
+      english: "Places and the verbs 'hay' and 'estar'",
+      arabic: "الأماكن واستخدام فعلي 'hay' و 'estar'"
+    },
+    description: {
+      english: "This lesson introduces vocabulary for common places and explains the difference between 'hay' (there is/are) and 'estar' (to be) when describing the existence and location of things.",
+      arabic: "هذا الدرس يقدم مفردات الأماكن الشائعة ويشرح الفرق بين 'hay' (يوجد) و 'estar' (يكون) عند وصف وجود الأشياء وموقعها."
+    },
+    level: "A1.2",
+    order: 8,
+    estimatedTime: 90,
+    vocabulary: lesson_10_vocab,
+    grammarPageContent: lesson_10_grammar
   }
+
 
 
 

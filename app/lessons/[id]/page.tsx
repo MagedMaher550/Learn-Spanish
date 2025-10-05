@@ -42,6 +42,8 @@ export default function LessonDetailPage() {
     );
   }
 
+  console.log(lesson)
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
