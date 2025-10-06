@@ -86,10 +86,16 @@ export default function LessonDetailPage() {
             onValueChange={(v) => setActiveTab(v as typeof activeTab)}
             className="w-full"
           >
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-3">
-              <TabsTrigger value="vocabulary">{t("vocabulary")}</TabsTrigger>
-              <TabsTrigger value="grammar">{t("grammar")}</TabsTrigger>
-              <TabsTrigger value="paragraphs">{t("paragraphs")}</TabsTrigger>
+            <TabsList className="flex w-full">
+              <TabsTrigger className="flex-1 text-center" value="vocabulary">
+                {t("vocabulary")}
+              </TabsTrigger>
+              <TabsTrigger className="flex-1 text-center" value="grammar">
+                {t("grammar")}
+              </TabsTrigger>
+              <TabsTrigger className="flex-1 text-center" value="paragraphs">
+                {t("paragraphs")}
+              </TabsTrigger>
             </TabsList>
 
             {/* Vocabulary Tab */}
