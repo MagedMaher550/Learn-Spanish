@@ -1,4 +1,5 @@
 import { JSX } from "react"
+import Paragraph from "./paragraph"
 
 export interface Vocabulary {
   spanish: string
@@ -55,8 +56,9 @@ export interface LessonContent {
   vocabulary: Vocabulary[]
   audioUrl?: string
   videoUrl?: string
-  grammarPdfUrl?: string // Added grammarPdfUrl field for PDF grammar content
-  grammarPageContent?: React.ComponentType; // 👈 instead of ReactElement
+  grammarPdfUrl?: string 
+  grammarPageContent?: React.ComponentType; 
+  paragraphs?: Paragraph[]
 }
 
 export interface LessonProgress {

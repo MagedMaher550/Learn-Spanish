@@ -1,16 +1,7 @@
 import { Navigation } from "@/components/navigation";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { BookOpen, Clock, Heart } from "lucide-react";
-import Link from "next/link";
 import paragraphs from "@/data/paragraphs";
+import { ParagraphCard } from "@/components/paragraph-card";
+import ParagraphsContainer from "@/components/ui/paragraphs-container";
 
 export default function ParagraphsPage() {
   return (
@@ -28,61 +19,14 @@ export default function ParagraphsPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {paragraphs.map((paragraph) => (
-            <Card
-              key={paragraph.id}
-              className="bg-card border-border overflow-hidden hover:shadow-lg transition-shadow"
-            >
-              <div className="relative">
-                <img
-                  src={paragraph.image || "/placeholder.svg"}
-                  alt={paragraph.title}
-                  className="w-full h-48 object-cover"
-                />
-              </div>
-
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg text-card-foreground text-balance">
-                  {paragraph.title}
-                </CardTitle>
-                <CardDescription className="text-sm text-muted-foreground line-clamp-3">
-                  {paragraph.description}
-                </CardDescription>
-              </CardHeader>
-
-              <CardContent className="pt-0">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-2">
-                    <Badge
-                      variant="secondary"
-                      className="bg-green-500/20 text-green-400 border-green-500/30"
-                    >
-                      {paragraph.level}
-                    </Badge>
-                    <div className="flex items-center gap-1 text-muted-foreground text-sm">
-                      <Clock className="h-3 w-3" />
-                      {paragraph.estimatedTime}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="text-xs text-muted-foreground mb-4">
-                  {paragraph.date}
-                </div>
-
-                <Button
-                  asChild
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                >
-                  <Link href={`/paragraphs/${paragraph.id}`}>
-                    Start Reading
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
+        <ParagraphsContainer>
+          {paragraphs.map((paragraph, index) => (
+            <ParagraphCard
+              paragraph={paragraph}
+              key={`${index}#${paragraph.id}#${paragraph.title}#${paragraph.description}`}
+            />
           ))}
-        </div>
+        </ParagraphsContainer>
       </main>
     </div>
   );

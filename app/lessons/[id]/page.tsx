@@ -14,17 +14,18 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 import { PDFViewer } from "@/components/pdf-viewer";
 import { useState } from "react";
-import { lesson_9_grammar } from "@/data/grammarPages";
+import { ParagraphCard } from "@/components/paragraph-card";
+import ParagraphsContainer from "@/components/ui/paragraphs-container";
 
 export default function LessonDetailPage() {
   const params = useParams();
   const { t, language } = useLocalization();
   const lessonId = params.id as string;
-  const [activeTab, setActiveTab] = useState<"vocab" | "grammar">("vocab");
+  const [activeTab, setActiveTab] = useState<
+    "vocabulary" | "grammar" | "paragraphs"
+  >("vocabulary");
 
   const lesson = lessons.find((l) => l.id === lessonId);
-
-  console.log(lesson)
 
   if (!lesson) {
     return (
@@ -41,8 +42,6 @@ export default function LessonDetailPage() {
       </div>
     );
   }
-
-  console.log(lesson)
 
   return (
     <div className="min-h-screen bg-background">
@@ -80,20 +79,29 @@ export default function LessonDetailPage() {
             </div>
           </div>
 
-          <Tabs defaultValue="vocabulary" className="w-full">
-            <TabsList className="grid w-full grid-cols-2">
+          {/* Tabs Section */}
+          <Tabs
+            defaultValue="vocabulary"
+            value={activeTab}
+            onValueChange={(v) => setActiveTab(v as typeof activeTab)}
+            className="w-full"
+          >
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-3">
               <TabsTrigger value="vocabulary">{t("vocabulary")}</TabsTrigger>
               <TabsTrigger value="grammar">{t("grammar")}</TabsTrigger>
+              <TabsTrigger value="paragraphs">{t("paragraphs")}</TabsTrigger>
             </TabsList>
 
+            {/* Vocabulary Tab */}
             <TabsContent value="vocabulary" className="space-y-6">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {lesson.vocabulary.map((vocab, index) => (
+                {lesson.vocabulary?.map((vocab, index) => (
                   <VocabularyCard key={index} vocabulary={vocab} />
                 ))}
               </div>
             </TabsContent>
 
+            {/* Grammar Tab */}
             <TabsContent value="grammar" className="space-y-6">
               {lesson.grammarPdfUrl ? (
                 <PDFViewer
@@ -109,8 +117,32 @@ export default function LessonDetailPage() {
                   <CardContent className="text-center py-8">
                     <p className="text-muted-foreground">
                       {language === "ar"
-                        ? "لا يوجد محتوي قواعد متاح لهذا الدرس"
-                        : "No grammar content available for this lesson"}
+                        ? "لا يوجد محتوى قواعد متاح لهذا الدرس"
+                        : "No grammar content available for this lesson."}
+                    </p>
+                  </CardContent>
+                </Card>
+              )}
+            </TabsContent>
+
+            {/* Paragraphs Tab */}
+            <TabsContent value="paragraphs" className="space-y-6">
+              {lesson.paragraphs && lesson.paragraphs.length > 0 ? (
+                <ParagraphsContainer>
+                  {lesson.paragraphs.map((paragraph, index) => (
+                    <ParagraphCard
+                      paragraph={paragraph}
+                      key={`${index}#${paragraph.id}#${paragraph.title}#${paragraph.description}`}
+                    />
+                  ))}
+                </ParagraphsContainer>
+              ) : (
+                <Card>
+                  <CardContent className="text-center py-8">
+                    <p className="text-muted-foreground">
+                      {language === "ar"
+                        ? "لا يوجد محتوى فقرات متاح لهذا الدرس"
+                        : "No paragraph content available for this lesson."}
                     </p>
                   </CardContent>
                 </Card>

@@ -1,4 +1,6 @@
-const paragraphs = [
+import Paragraph from "@/types/paragraph";
+
+const paragraphs: Paragraph[] = [
     {
         id: 1,
         title: "Dogs get free daycare in Italy!",
@@ -30,7 +32,6 @@ const paragraphs = [
         image: "/house_story.jpg",
         estimatedTime: "30 min",
     }
-
 ];
 
 export default paragraphs

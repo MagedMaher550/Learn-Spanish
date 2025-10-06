@@ -13,6 +13,7 @@ import {
   lesson_10_vocab,
   lesson_11_vocab
 } from './vocabulary'
+import paragraphs from "./paragraphs";
 
 export const lessons: LessonContent[] = [
   {
@@ -190,7 +191,8 @@ export const lessons: LessonContent[] = [
     order: 11,
     estimatedTime: 210,
     vocabulary: lesson_11_vocab,
-    grammarPageContent: lesson_11_grammar
+    grammarPageContent: lesson_11_grammar,
+    paragraphs: [...paragraphs.filter((p) => p.id === 3)]
   }
 
 
