@@ -38,7 +38,7 @@ export function Navigation() {
           >
             <BookOpen className="h-6 w-6 text-primary" />
             <span className="text-xl font-bold hidden [@media(min-width:375px)]:inline">
-              Spanish A1.1
+              Spanish A1
             </span>
           </Link>
 
