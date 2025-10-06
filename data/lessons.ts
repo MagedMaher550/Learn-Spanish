@@ -192,7 +192,7 @@ export const lessons: LessonContent[] = [
     estimatedTime: 210,
     vocabulary: lesson_11_vocab,
     grammarPageContent: lesson_11_grammar,
-    paragraphs: [...paragraphs.filter((p) => p.id === 3)]
+    paragraphs: [...paragraphs.filter((p) => p.id === 4)]
   }
 
 

@@ -31,7 +31,17 @@ const paragraphs: Paragraph[] = [
         date: "5 October 2025",
         image: "/house_story.jpg",
         estimatedTime: "30 min",
+    },
+    {
+        "id": 4,
+        "title": "Mi ático en Chueca",
+        "description": "Vivo en un ático con una pequeña terraza. Solo tiene setenta y cinco metros cuadrados pero es muy bonito y yo estoy muy contenta de vivir aquí. El ático está lejos del centro, es un edificio nuevo y solo hay vecinos por planta. El barrio tiene mucho movimiento. En mi barrio hay tiendas de ropa y también dos farmacias, una pastelería y un hospital. La parada del metro está al lado del mercado de San Antón. Los restaurantes y bares más importantes están en la plaza de Chueca. En el barrio hay un ambiente muy intercultural porque se mezclan personas de diferentes provincias.",
+        "level": "A1.2",
+        "date": "6 October 2025",
+        "image": "/attic_story.jpg",
+        "estimatedTime": "30 min"
     }
+
 ];
 
 export default paragraphs
