@@ -1,0 +1,32 @@
+const lesson_11_vocab = [
+  { spanish: "té", english: "tea", arabic: "شاي", pronunciation: "te" },
+  { spanish: "limón", english: "lemon", arabic: "ليمون", pronunciation: "lee-MON" },
+  { spanish: "azúcar", english: "sugar", arabic: "سكر", pronunciation: "a-THU-kar" },
+  { spanish: "metros cuadrados", english: "square meters", arabic: "أمتار مربعة", pronunciation: "ME-tros kwa-DRA-dos" },
+  { spanish: "seguido", english: "in a row / continuously", arabic: "بشكل متتابع", pronunciation: "se-GEE-do" },
+  { spanish: "piso", english: "apartment / floor", arabic: "شقة / طابق", pronunciation: "PEE-so" },
+  { spanish: "chalé", english: "villa / chalet", arabic: "فيلا / شاليه", pronunciation: "cha-LE" },
+  { spanish: "entorno", english: "environment / surroundings", arabic: "بيئة / محيط", pronunciation: "en-TOR-no" },
+  { spanish: "living", english: "living room", arabic: "غرفة معيشة", pronunciation: "LEE-ving" },
+  { spanish: "cochera", english: "garage", arabic: "كراج / جراج", pronunciation: "ko-CHE-ra" },
+  { spanish: "piscina", english: "swimming pool", arabic: "حمام سباحة", pronunciation: "pees-SEE-na" },
+  { spanish: "barbacoa", english: "barbecue", arabic: "شواء", pronunciation: "bar-ba-KO-a" },
+  { spanish: "parrilla", english: "grill", arabic: "شواية", pronunciation: "pa-REE-ya" },
+  { spanish: "algo", english: "something", arabic: "شيء", pronunciation: "AL-go" },
+  { spanish: "alguien", english: "someone", arabic: "شخص ما", pronunciation: "AL-gyeen" },
+  { spanish: "cantidad", english: "quantity / amount", arabic: "كمية", pronunciation: "kan-ti-DAD" },
+  { spanish: "desconocida", english: "unknown", arabic: "مجهولة", pronunciation: "des-ko-no-SEE-da" },
+  { spanish: "existencia", english: "existence", arabic: "وجود", pronunciation: "e-ksis-TEN-sya" },
+  { spanish: "ubicación", english: "location", arabic: "موقع / مكان", pronunciation: "u-bi-ka-THYON" },
+  { spanish: "mucho", english: "a lot / much", arabic: "كثير", pronunciation: "MU-cho" },
+  { spanish: "poco", english: "a little / few", arabic: "قليل", pronunciation: "PO-ko" },
+  { spanish: "muy", english: "very", arabic: "جداً", pronunciation: "mwee" },
+  { spanish: "resbaladilla", "english": "slide", "arabic": "زُحليقة", "pronunciation": "res-ba-la-DEE-ya" },
+  { spanish: "tobogán", "english": "slide", "arabic": "زُحليقة", "pronunciation": "to-bo-GAN" },
+  { spanish: "columpio", "english": "swing", "arabic": "مُرجيحة", "pronunciation": "ko-LUM-pyo" },
+  { spanish: "congestión", "english": "traffic jam / congestion", "arabic": "زحمة", "pronunciation": "kon-hes-TYON" },
+  { spanish: "congestionado", "english": "congested / crowded", "arabic": "مزدحم", "pronunciation": "kon-hes-tyo-NA-do" },
+  { spanish: "muy lleno", "english": "very crowded / full", "arabic": "مزدحم جداً", "pronunciation": "mwee YE-no" }
+];
+
+export default lesson_11_vocab;

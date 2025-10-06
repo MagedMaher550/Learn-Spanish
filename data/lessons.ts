@@ -1,15 +1,18 @@
 import type { LessonContent } from "@/types/lesson";
-import lesson_one_vocab from "./vocabulary/lesson_1";
-import lesson_two_vocab from "./vocabulary/lesson_2";
-import lesson_three_vocab from "./vocabulary/lesson_3";
-import lesson_four_vocab from "./vocabulary/lesson_4";
-import lesson_five_vocab from "./vocabulary/lesson_5";
-import lesson_six_vocab from "./vocabulary/lesson_6";
-import lesson_seven_vocab from "./vocabulary/lesson_7";
-import lesson_eight_vocab from "./vocabulary/lesson_8";
-import lesson_nine_vocab from "./vocabulary/lesson_9";
-import { lesson_10_grammar, lesson_9_grammar } from "./grammarPages";
-import lesson_10_vocab from "./vocabulary/lesson_10";
+import { lesson_11_grammar, lesson_10_grammar, lesson_9_grammar } from "./grammarPages";
+import {
+  lesson_1_vocab,
+  lesson_2_vocab,
+  lesson_3_vocab,
+  lesson_4_vocab,
+  lesson_5_vocab,
+  lesson_6_vocab,
+  lesson_7_vocab,
+  lesson_8_vocab,
+  lesson_9_vocab,
+  lesson_10_vocab,
+  lesson_11_vocab
+} from './vocabulary'
 
 export const lessons: LessonContent[] = [
   {
@@ -25,7 +28,7 @@ export const lessons: LessonContent[] = [
     level: "A1.1",
     order: 1,
     estimatedTime: 45,
-    vocabulary: lesson_one_vocab,
+    vocabulary: lesson_1_vocab,
 
     grammarPdfUrl: "/pdfs/grammar/lesson-1-grammar.pdf",
   },
@@ -42,7 +45,7 @@ export const lessons: LessonContent[] = [
     level: "A1.1",
     order: 2,
     estimatedTime: 75,
-    vocabulary: lesson_two_vocab,
+    vocabulary: lesson_2_vocab,
     grammarPdfUrl: "/pdfs/grammar/lesson-2-grammar.pdf",
   },
   {
@@ -58,7 +61,7 @@ export const lessons: LessonContent[] = [
     level: "A1.1",
     order: 2,
     estimatedTime: 105,
-    vocabulary: lesson_three_vocab,
+    vocabulary: lesson_3_vocab,
     grammarPdfUrl: "/pdfs/grammar/lesson-3-grammar.pdf",
   },
   {
@@ -74,7 +77,7 @@ export const lessons: LessonContent[] = [
     level: "A1.1",
     order: 2,
     estimatedTime: 115,
-    vocabulary: lesson_four_vocab,
+    vocabulary: lesson_4_vocab,
     grammarPdfUrl: "/pdfs/grammar/lesson-4-grammar.pdf",
   },
   {
@@ -90,7 +93,7 @@ export const lessons: LessonContent[] = [
     level: "A1.1",
     order: 2,
     estimatedTime: 100,
-    vocabulary: lesson_five_vocab,
+    vocabulary: lesson_5_vocab,
     grammarPdfUrl: undefined,
   },
   {
@@ -106,7 +109,7 @@ export const lessons: LessonContent[] = [
     level: "A1.1",
     order: 2,
     estimatedTime: 55,
-    vocabulary: lesson_six_vocab,
+    vocabulary: lesson_6_vocab,
     grammarPdfUrl: "/pdfs/grammar/lesson-6-grammar.pdf",
   },
   {
@@ -122,7 +125,7 @@ export const lessons: LessonContent[] = [
     level: "A1.1",
     order: 7,
     estimatedTime: 70,
-    vocabulary: lesson_seven_vocab,
+    vocabulary: lesson_7_vocab,
     grammarPdfUrl: "/pdfs/grammar/lesson-7-grammar.pdf",
   },
   {
@@ -138,7 +141,7 @@ export const lessons: LessonContent[] = [
     level: "A1.1",
     order: 7,
     estimatedTime: 70,
-    vocabulary: lesson_eight_vocab,
+    vocabulary: lesson_8_vocab,
     grammarPdfUrl: "/pdfs/grammar/lesson-8-grammar.pdf",
   },
   {
@@ -154,7 +157,7 @@ export const lessons: LessonContent[] = [
     level: "A1.2",
     order: 7,
     estimatedTime: 85,
-    vocabulary: lesson_nine_vocab,
+    vocabulary: lesson_9_vocab,
     grammarPageContent: lesson_9_grammar
   },
   {
@@ -172,8 +175,23 @@ export const lessons: LessonContent[] = [
     estimatedTime: 90,
     vocabulary: lesson_10_vocab,
     grammarPageContent: lesson_10_grammar
+  },
+  {
+    id: "lesson-11",
+    title: {
+      english: "Hay, estar, dónde, cuántos, mucho/muy/poco",
+      arabic: "استخدام hay و estar و dónde و cuántos و mucho/muy/poco"
+    },
+    description: {
+      english: "Learn to express existence, location, quantity, and intensity using 'hay', 'estar', 'dónde', 'cuántos', and modifiers like 'mucho', 'poco', and 'muy'.",
+      arabic: "تعلّم كيف تعبّر عن الوجود والمكان والكمية والشدة باستخدام 'hay' و 'estar' و 'dónde' و 'cuántos' وكلمات مثل 'mucho' و 'poco' و 'muy'."
+    },
+    level: "A1.2",
+    order: 11,
+    estimatedTime: 210,
+    vocabulary: lesson_11_vocab,
+    grammarPageContent: lesson_11_grammar
   }
-
 
 
 

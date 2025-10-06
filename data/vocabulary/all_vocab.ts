@@ -5,8 +5,24 @@ import lesson_four_vocab from "./lesson_4"
 import lesson_five_vocab from "./lesson_5"
 import lesson_six_vocab from "./lesson_6"
 import lesson_seven_vocab from "./lesson_7"
+import lesson_8_vocab from "./lesson_8"
+import lesson_9_vocab from "./lesson_9"
+import lesson_10_vocab from "./lesson_10"
+import lesson_11_vocab from "./lesson_11"
 
-const lessons = [lesson_one_vocab, lesson_two_vocab, lesson_three_vocab, lesson_four_vocab, lesson_five_vocab, lesson_six_vocab,lesson_seven_vocab]
+const lessons = [
+    lesson_one_vocab,
+    lesson_two_vocab,
+    lesson_three_vocab,
+    lesson_four_vocab,
+    lesson_five_vocab,
+    lesson_six_vocab,
+    lesson_seven_vocab,
+    lesson_8_vocab,
+    lesson_9_vocab,
+    lesson_10_vocab,
+    lesson_11_vocab
+]
 
 const all_vocab = lessons.flat()
 
