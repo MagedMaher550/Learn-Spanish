@@ -80,25 +80,27 @@ export function ReadingStory({ story, words, grammar }: ReadingStoryProps) {
 
                 <CardContent>
                   <div
-                    className={`flex items-center mb-6 rounded-lg ${
+                    className={`flex items-center gap-4 mb-6 rounded-lg ${
                       hydrated
                         ? viewPortWidth > 485
-                          ? "flex-row justify-between"
-                          : "flex-col-reverse justify-between bg-red"
-                        : "flex-col-reverse justify-between"
+                          ? "flex-row"
+                          : "flex-col-reverse"
+                        : "flex-col-reverse"
                     }`}
                   >
-                    <AudioPlayer
-                      src={story.fullAudio || ""}
-                      showTitle
-                      title="Full story"
-                    />
+                    <div className="flex-1 w-full">
+                      <AudioPlayer
+                        src={story.fullAudio || ""}
+                        showTitle
+                        title="Full story"
+                      />
+                    </div>
 
                     <Button
                       variant="outline"
                       onClick={handleSpeedChange}
                       className={`flex items-center gap-2 bg-transparent cursor-pointer ${
-                        hydrated && viewPortWidth <= 485 ? "mb-8" : "mb-0"
+                        hydrated && viewPortWidth <= 485 ? "mb-4" : "mb-0"
                       }`}
                       disabled={!story.fullAudio}
                     >
@@ -143,6 +145,7 @@ export function ReadingStory({ story, words, grammar }: ReadingStoryProps) {
               </CardContent>
             </Card>
           </TabsContent>
+
           <TabsContent value="grammar" className="mt-6">
             {grammar}
           </TabsContent>
