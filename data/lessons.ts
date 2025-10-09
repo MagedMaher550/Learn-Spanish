@@ -1,5 +1,10 @@
 import type { LessonContent } from "@/types/lesson";
-import { lesson_11_grammar, lesson_10_grammar, lesson_9_grammar } from "./grammarPages";
+import {
+  lesson_9_grammar,
+  lesson_10_grammar,
+  lesson_11_grammar,
+  lesson_12_grammar
+} from "./grammarPages";
 import {
   lesson_1_vocab,
   lesson_2_vocab,
@@ -11,7 +16,8 @@ import {
   lesson_8_vocab,
   lesson_9_vocab,
   lesson_10_vocab,
-  lesson_11_vocab
+  lesson_11_vocab,
+  lesson_12_vocab
 } from './vocabulary'
 import paragraphs from "./paragraphs";
 
@@ -193,7 +199,25 @@ export const lessons: LessonContent[] = [
     vocabulary: lesson_11_vocab,
     grammarPageContent: lesson_11_grammar,
     paragraphs: [...paragraphs.filter((p) => p.id === 4)]
+  },
+  {
+    id: "lesson-12",
+    title: {
+      english: "Family and Possessive Adjectives (mi, tu, su...)",
+      arabic: "العائلة وصفات الملكية (mi، tu، su...)"
+    },
+    description: {
+      english: "Learn how to talk about your family and relationships using family vocabulary and possessive adjectives such as 'mi', 'tu', 'su', 'nuestro', and 'vuestro'.",
+      arabic: "تعلّم كيف تتحدث عن عائلتك وعلاقاتك باستخدام مفردات العائلة وصفات الملكية مثل 'mi' و'tu' و'su' و'nuestro' و'vuestro'."
+    },
+    level: "A1.2",
+    order: 12,
+    estimatedTime: 175,
+    vocabulary: lesson_12_vocab,
+    grammarPageContent: lesson_12_grammar,
+    paragraphs: [...paragraphs.filter((p) => p.id === 5 || p.id === 6)]
   }
+
 
 
 

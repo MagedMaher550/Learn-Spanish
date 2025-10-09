@@ -9,6 +9,7 @@ import lesson_8_vocab from "./lesson_8"
 import lesson_9_vocab from "./lesson_9"
 import lesson_10_vocab from "./lesson_10"
 import lesson_11_vocab from "./lesson_11"
+import lesson_12_vocab from "./lesson_12"
 
 const lessons = [
     lesson_one_vocab,
@@ -21,7 +22,8 @@ const lessons = [
     lesson_8_vocab,
     lesson_9_vocab,
     lesson_10_vocab,
-    lesson_11_vocab
+    lesson_11_vocab,
+    lesson_12_vocab
 ]
 
 const all_vocab = lessons.flat()

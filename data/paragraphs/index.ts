@@ -40,7 +40,27 @@ const paragraphs: Paragraph[] = [
         "date": "6 October 2025",
         "image": "/story_4_thumbnail.png",
         "estimatedTime": "30 min"
+    },
+    {
+        "id": 5,
+        "title": "Nuestros abuelos",
+        "description": "Nuestra foto favorita es la de nuestros abuelos, María y Ricardo, en el jardín. Son los padres de nuestra madre. María tiene sesenta y cinco años y Ricardo sesenta y seis. Nuestro abuelo es español, de un pueblo de Ourense, y nuestra abuela es colombiana, de Medellín. Pero los dos viven en Bogotá desde hace más de sesenta años. Son alegres y muy cariñosos.",
+        "level": "A1.2",
+        "date": "9 October 2025",
+        "image": "/story_5_thumbnail.png",
+        "estimatedTime": "30 min"
+    },
+    {
+        "id": 6,
+        "title": "Jennifer Lopez",
+        "description": "Me llamo Thiago y soy fanático de Jennifer Lopez desde pequeño. Tengo todos sus discos y películas. Lo sé todo sobre ella. Lynn, más conocida como JLo, nació el 24 de julio de 1969 en el Bronx, Nueva York. Sus papás son boricuas: Guadalupe trabaja en una guardería y su padre es programador de computadoras. Tiene dos hermanas, Linda y Leslie. Es profesora de música y según la revista People, es la artista hispana con mayor influencia en los Estados Unidos. Además, es actriz, cantante, bailarina, empresaria, productora y diseñadora de moda. Ha protagonizado muchas películas y su familia también es famosa: Selena, Anaconda, Bailamos, Made in Manhattan, Border Town. Ha tenido mucho éxito con álbumes publicados, números uno, y se ha separado tres veces. Tiene hijos gemelos, Emme y Maximilian, con Marc Anthony, y otros hijos, Maribel y David. Si quieren saber más, pregúntenme sobre JLo y su vida como puertorriqueña.",
+        "level": "A1.2",
+        "date": "9 October 2025",
+        "image": "/story_6_thumbnail.png",
+        "estimatedTime": "90 min"
     }
+
+
 
 ];
 
