@@ -3,7 +3,8 @@ import {
   lesson_9_grammar,
   lesson_10_grammar,
   lesson_11_grammar,
-  lesson_12_grammar
+  lesson_12_grammar,
+  lesson_13_grammar
 } from "./grammarPages";
 import {
   lesson_1_vocab,
@@ -17,7 +18,8 @@ import {
   lesson_9_vocab,
   lesson_10_vocab,
   lesson_11_vocab,
-  lesson_12_vocab
+  lesson_12_vocab,
+  lesson_13_vocab
 } from './vocabulary'
 import paragraphs from "./paragraphs";
 
@@ -216,6 +218,23 @@ export const lessons: LessonContent[] = [
     vocabulary: lesson_12_vocab,
     grammarPageContent: lesson_12_grammar,
     paragraphs: [...paragraphs.filter((p) => p.id === 5 || p.id === 6)]
+  }
+  , {
+    id: "lesson-13",
+    "title": {
+      "english": "Descriptive Adjectives and Self-Description",
+      "arabic": "الصفات وكيفية وصف النفس"
+    },
+    "description": {
+      "english": "Learn how to describe yourself and others in Spanish using common descriptive adjectives for appearance, personality, and character traits.",
+      "arabic": "تعلّم كيفية وصف نفسك والآخرين بالإسبانية باستخدام الصفات الشائعة للمظهر والشخصية والصفات المميزة."
+    },
+    level: "A1.2",
+    order: 12,
+    estimatedTime: 125,
+    vocabulary: lesson_13_vocab,
+    grammarPageContent: lesson_13_grammar,
+    paragraphs: [...paragraphs.filter((p) => p.id === 7)]
   }
 
 

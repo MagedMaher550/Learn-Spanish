@@ -58,6 +58,15 @@ const paragraphs: Paragraph[] = [
         "date": "9 October 2025",
         "image": "/story_6_thumbnail.png",
         "estimatedTime": "90 min"
+    },
+    {
+        "id": 7,
+        "title": "Mis compañeros y yo",
+        "description": "Me llamo Daniel y soy una persona tranquila, amable y un poco tímida. Tengo el pelo castaño y los ojos marrones. Mi mejor amigo Pablo es bajo, rubio y muy divertido. Estudiamos juntos en la universidad. Nuestra amiga Sara es guapa, delgada y alegre. Somos diferentes pero nos llevamos muy bien. Cada uno tiene su personalidad, y eso hace nuestra amistad muy especial.",
+        "level": "A1.2",
+        "date": "9 October 2025",
+        "image": "/story_7_thumbnail.png",
+        "estimatedTime": "90 min"
     }
 
 

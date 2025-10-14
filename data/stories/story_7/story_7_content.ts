@@ -1,0 +1,121 @@
+// story_7_content.ts
+import { story_7_words } from "./story_7_words";
+
+export const story_7_content = {
+    id: "story_7",
+    title: "Mis compañeros y yo",
+    arTitle: "زملائي وأنا",
+    level: "A1.2",
+    image: "/story_7_thumbnail.png",
+    fullAudio: "/audio/stories/story_7/full_story.mp3",
+
+    sentences: [
+        {
+            spanish: "Me llamo Daniel. Soy alto y moreno.",
+            english: "My name is Daniel. I am tall and dark-skinned.",
+            arabic: "اسمي دانيال. أنا طويل القامة وأسمر البشرة.",
+            words: ["me", "llamo", "Daniel", "soy", "alto", "y", "moreno"],
+            audio: "/audio/stories/story_7/s1.mp3",
+        },
+        {
+            spanish: "Tengo el pelo castaño y los ojos marrones.",
+            english: "I have brown hair and brown eyes.",
+            arabic: "لدي شعر بني وعيون بنية.",
+            words: ["tengo", "el", "pelo", "castaño", "y", "los", "ojos", "marrones"],
+            audio: "/audio/stories/story_7/s2.mp3",
+        },
+        {
+            spanish: "Soy una persona tranquila, amable y un poco tímida.",
+            english: "I am a calm, kind, and somewhat shy person.",
+            arabic: "أنا شخص هادئ، لطيف، وخجول قليلاً.",
+            words: ["soy", "una", "persona", "tranquila", "amable", "y", "un", "poco", "tímida"],
+            audio: "/audio/stories/story_7/s3.mp3",
+        },
+        {
+            spanish: "Pero mis amigos dicen que soy muy inteligente.",
+            english: "But my friends say that I am very intelligent.",
+            arabic: "لكن أصدقائي يقولون إني ذكي جداً.",
+            words: ["pero", "mis", "amigos", "dicen", "que", "soy", "muy", "inteligente"],
+            audio: "/audio/stories/story_7/s4.mp3",
+        },
+        {
+            spanish: "Mi mejor amigo se llama Pablo.",
+            english: "My best friend is called Pablo.",
+            arabic: "أفضل صديق لي يدعى بابلو.",
+            words: ["mi", "mejor", "amigo", "se", "llama", "Pablo"],
+            audio: "/audio/stories/story_7/s5.mp3",
+        },
+        {
+            spanish: "Es bajo, rubio y muy divertido.",
+            english: "He is short, blond, and very funny.",
+            arabic: "هو قصير القامة، أشقر، ومضحك جداً.",
+            words: ["es", "bajo", "rubio", "y", "muy", "divertido"],
+            audio: "/audio/stories/story_7/s6.mp3",
+        },
+        {
+            spanish: "A veces es hablador, pero siempre es simpático.",
+            english: "Sometimes he is talkative, but he is always nice.",
+            arabic: "أحياناً يكون ثرثاراً، لكنه دائماً لطيف.",
+            words: ["a", "veces", "es", "hablador", "pero", "siempre", "es", "simpático"],
+            audio: "/audio/stories/story_7/s7.mp3",
+        },
+        {
+            spanish: "Estudiamos juntos en la universidad.",
+            english: "We study together at the university.",
+            arabic: "ندرس معاً في الجامعة.",
+            words: ["estudiamos", "juntos", "en", "la", "universidad"],
+            audio: "/audio/stories/story_7/s8.mp3",
+        },
+        {
+            spanish: "Él es muy trabajador, aunque a veces un poco perezoso por la mañana.",
+            english: "He is very hardworking, although sometimes a bit lazy in the morning.",
+            arabic: "هو مجتهد جداً، رغم أنه أحياناً كسول قليلاً في الصباح.",
+            words: ["él", "es", "muy", "trabajador", "aunque", "a", "veces", "un", "poco", "perezoso", "por", "la", "mañana"],
+            audio: "/audio/stories/story_7/s9.mp3",
+        },
+        {
+            spanish: "Nuestra amiga Sara es guapa, delgada y alegre.",
+            english: "Our friend Sara is pretty, slim, and cheerful.",
+            arabic: "صديقتنا سارة جميلة، نحيفة، ومبهجة.",
+            words: ["nuestra", "amiga", "Sara", "es", "guapa", "delgada", "y", "alegre"],
+            audio: "/audio/stories/story_7/s10.mp3",
+        },
+        {
+            spanish: "Es muy responsable y educada.",
+            english: "She is very responsible and polite.",
+            arabic: "هي مسؤولة جداً ومؤدبة.",
+            words: ["es", "muy", "responsable", "y", "educada"],
+            audio: "/audio/stories/story_7/s11.mp3",
+        },
+        {
+            spanish: "Cuando alguien está triste, ella siempre ayuda.",
+            english: "When someone is sad, she always helps.",
+            arabic: "عندما يكون أحد حزيناً، هي دائماً تساعد.",
+            words: ["cuando", "alguien", "está", "triste", "ella", "siempre", "ayuda"],
+            audio: "/audio/stories/story_7/s12.mp3",
+        },
+        {
+            spanish: "Somos diferentes, pero nos llevamos muy bien.",
+            english: "We are different, but we get along very well.",
+            arabic: "نحن مختلفون، لكننا ننسجم جيداً.",
+            words: ["somos", "diferentes", "pero", "nos", "llevamos", "muy", "bien"],
+            audio: "/audio/stories/story_7/s13.mp3",
+        },
+        {
+            spanish: "Cada uno tiene su personalidad.",
+            english: "Each one has their own personality.",
+            arabic: "كل واحد لديه شخصيته.",
+            words: ["cada", "uno", "tiene", "su", "personalidad"],
+            audio: "/audio/stories/story_7/s14.mp3",
+        },
+        {
+            spanish: "Y eso hace nuestra amistad muy especial.",
+            english: "And that makes our friendship very special.",
+            arabic: "وهذا يجعل صداقتنا مميزة جداً.",
+            words: ["y", "eso", "hace", "nuestra", "amistad", "muy", "especial"],
+            audio: "/audio/stories/story_7/s15.mp3",
+        },
+    ],
+
+    vocabulary: Object.keys(story_7_words),
+};
