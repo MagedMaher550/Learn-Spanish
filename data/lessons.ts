@@ -4,7 +4,8 @@ import {
   lesson_10_grammar,
   lesson_11_grammar,
   lesson_12_grammar,
-  lesson_13_grammar
+  lesson_13_grammar,
+  lesson_14_grammar
 } from "./grammarPages";
 import {
   lesson_1_vocab,
@@ -19,7 +20,8 @@ import {
   lesson_10_vocab,
   lesson_11_vocab,
   lesson_12_vocab,
-  lesson_13_vocab
+  lesson_13_vocab,
+  lesson_14_vocab
 } from './vocabulary'
 import paragraphs from "./paragraphs";
 
@@ -235,7 +237,25 @@ export const lessons: LessonContent[] = [
     vocabulary: lesson_13_vocab,
     grammarPageContent: lesson_13_grammar,
     paragraphs: [...paragraphs.filter((p) => p.id === 7)]
+  },
+  {
+    "id": "lesson-14",
+    "title": {
+      "english": "Clothing and Fabrics",
+      "arabic": "الملابس والأقمشة"
+    },
+    "description": {
+      "english": "Learn the names of common clothing items and materials in Spanish to describe what you wear and identify fabrics.",
+      "arabic": "تعلّم أسماء الملابس والأقمشة الشائعة بالإسبانية لوصف ما ترتديه والتعرّف على أنواع الأقمشة."
+    },
+    "level": "A1.2",
+    "order": 13,
+    "estimatedTime": 65,
+    vocabulary: lesson_14_vocab,
+    grammarPageContent: lesson_14_grammar,
+    paragraphs: [...paragraphs.filter((p) => p.id === 8)]
   }
+
 
 
 

@@ -67,6 +67,15 @@ const paragraphs: Paragraph[] = [
         "date": "9 October 2025",
         "image": "/story_7_thumbnail.png",
         "estimatedTime": "90 min"
+    },
+    {
+        "id": 8,
+        "title": "Mi familia y yo por la mañana",
+        "description": "Hoy es lunes y estoy en casa con mi familia. Somos cuatro personas: mi padre, mi madre, mi hermano y yo. Soy estudiante y me visto para ir a la universidad. Llevo una camiseta blanca, pantalones negros y una chaqueta azul. Mi hermano se pone una camisa verde y vaqueros. Mi madre prepara el desayuno y lleva un vestido elegante. Mi padre es serio y lleva corbata y abrigo. Cuando todos estamos listos, salimos juntos contentos.",
+        "level": "A1.2",
+        "date": "9 October 2025",
+        "image": "/story_8_thumbnail.png",
+        "estimatedTime": "90 min"
     }
 
 
