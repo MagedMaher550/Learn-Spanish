@@ -1,3 +1,4 @@
+import storiesVocabs from './stories_vocab'
 import {
     lesson_1_vocab,
     lesson_2_vocab,
@@ -15,9 +16,7 @@ import {
     lesson_14_vocab,
 } from './index'
 
-import storiesVocabs from './stories_vocab'
 
-// Combine all lesson and story vocab arrays
 const all_vocab = [
     ...Object.values(storiesVocabs).flat(),
     ...lesson_1_vocab,

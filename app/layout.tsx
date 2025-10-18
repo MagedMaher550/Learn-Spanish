@@ -9,7 +9,7 @@ import { Suspense } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Learn Spanish - A1.1 Spanish Learning Platform",
+  title: "Learn Spanish - Spanish Learning Platform",
   description:
     "Master Spanish from scratch with interactive lessons, audio, and video content. Available in English and Arabic.",
   generator: "MSS",
