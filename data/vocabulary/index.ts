@@ -12,6 +12,7 @@ import lesson_11_vocab from "./lesson_11";
 import lesson_12_vocab from "./lesson_12";
 import lesson_13_vocab from "./lesson_13";
 import lesson_14_vocab from "./lesson_14";
+import lesson_15_vocab from "./lesson_15";
 
 
 export {
@@ -28,5 +29,6 @@ export {
     lesson_11_vocab,
     lesson_12_vocab,
     lesson_13_vocab,
-    lesson_14_vocab
+    lesson_14_vocab,
+    lesson_15_vocab,
 }

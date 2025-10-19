@@ -73,9 +73,18 @@ const paragraphs: Paragraph[] = [
         "title": "Mi familia y yo por la mañana",
         "description": "Hoy es lunes y estoy en casa con mi familia. Somos cuatro personas: mi padre, mi madre, mi hermano y yo. Soy estudiante y me visto para ir a la universidad. Llevo una camiseta blanca, pantalones negros y una chaqueta azul. Mi hermano se pone una camisa verde y vaqueros. Mi madre prepara el desayuno y lleva un vestido elegante. Mi padre es serio y lleva corbata y abrigo. Cuando todos estamos listos, salimos juntos contentos.",
         "level": "A1.2",
-        "date": "9 October 2025",
+        "date": "17 October 2025",
         "image": "/story_8_thumbnail.png",
         "estimatedTime": "90 min"
+    },
+    {
+        "id": 9,
+        "title": "Juan y Pedro en el aeropuerto",
+        "description": "Juan es un jugador trabajador y sincero de veinticinco años. Hoy está en el aeropuerto para viajar al sur en avión. Lleva una chaqueta azul, vaqueros y un cinturón negro. Encuentra a su amigo Pedro, quien lleva una mochila y sombrero. Mientras esperan el avión cerca del puerto, Juan lleva gafas de sol y delantal para trabajar en un proyecto. Pedro está confundido sobre la estación de metro, pero Juan le ayuda. Finalmente suben al avión felices y listos para la aventura.",
+        "level": "A1.2",
+        "date": "20 October 2025",
+        "image": "/story_9_thumbnail.png",
+        "estimatedTime": "100 min"
     }
 
 
