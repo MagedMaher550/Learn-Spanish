@@ -279,12 +279,12 @@ export const lessons: LessonContent[] = [
   {
     id: "lesson-16",
     title: {
-      english: "Clothing, Descriptions, and Transportation",
-      arabic: "الملابس والأوصاف ووسائل النقل"
+      english: "Adjectives and the Verb IR / IRSE",
+      arabic: "الصفات وفعلَي IR و IRSE"
     },
     description: {
-      english: "Learn common clothing items, adjectives, and transportation methods in Spanish, and how to describe people and what they wear.",
-      arabic: "تعلّم أسماء الملابس، الصفات، ووسائل النقل بالإسبانية، وكيفية وصف الأشخاص وما يرتدونه."
+      english: "Learn how to describe people and places using common Spanish adjectives, and how to use the verbs IR (to go) and IRSE (to leave) in context. Understand the difference between them through practical examples and dialogues.",
+      arabic: "تعلّم كيفية وصف الأشخاص والأماكن باستخدام الصفات الشائعة بالإسبانية، وكيفية استخدام الفعلين IR (يذهب) و IRSE (يغادر) في السياق. افهم الفرق بينهما من خلال أمثلة وحوارات عملية."
     },
     level: "A1.2",
     order: 16,
@@ -293,5 +293,6 @@ export const lessons: LessonContent[] = [
     grammarPageContent: lesson_16_grammar,
     paragraphs: [...paragraphs.filter((p) => p.id === 10)]
   }
+
 
 ];
