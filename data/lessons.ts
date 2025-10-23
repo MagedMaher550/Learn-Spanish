@@ -7,6 +7,7 @@ import {
   lesson_13_grammar,
   lesson_14_grammar,
   lesson_15_grammar,
+  lesson_16_grammar,
 } from "./grammarPages";
 import {
   lesson_1_vocab,
@@ -23,7 +24,8 @@ import {
   lesson_12_vocab,
   lesson_13_vocab,
   lesson_14_vocab,
-  lesson_15_vocab
+  lesson_15_vocab,
+  lesson_16_vocab,
 } from './vocabulary'
 import paragraphs from "./paragraphs";
 
@@ -258,7 +260,7 @@ export const lessons: LessonContent[] = [
     paragraphs: [...paragraphs.filter((p) => p.id === 8)]
   },
   {
-    id: "lesson-16",
+    id: "lesson-15",
     title: {
       english: "Clothing, Descriptions, and Transportation",
       arabic: "الملابس والأوصاف ووسائل النقل"
@@ -273,6 +275,23 @@ export const lessons: LessonContent[] = [
     vocabulary: lesson_15_vocab,
     grammarPageContent: lesson_15_grammar,
     paragraphs: [...paragraphs.filter((p) => p.id === 9)]
+  },
+  {
+    id: "lesson-16",
+    title: {
+      english: "Clothing, Descriptions, and Transportation",
+      arabic: "الملابس والأوصاف ووسائل النقل"
+    },
+    description: {
+      english: "Learn common clothing items, adjectives, and transportation methods in Spanish, and how to describe people and what they wear.",
+      arabic: "تعلّم أسماء الملابس، الصفات، ووسائل النقل بالإسبانية، وكيفية وصف الأشخاص وما يرتدونه."
+    },
+    level: "A1.2",
+    order: 16,
+    estimatedTime: 75,
+    vocabulary: lesson_16_vocab,
+    grammarPageContent: lesson_16_grammar,
+    paragraphs: [...paragraphs.filter((p) => p.id === 10)]
   }
 
 ];

@@ -58,7 +58,7 @@ export function ParagraphCard({ paragraph }: { paragraph: Paragraph }) {
           asChild
           className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
         >
-          <Link href={`/paragraphs/${id}`}>Start Reading</Link>
+          <Link href={`/paragraphs/${id}`}>Start Listening</Link>
         </Button>
       </CardContent>
     </Card>

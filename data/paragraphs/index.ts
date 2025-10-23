@@ -85,7 +85,16 @@ const paragraphs: Paragraph[] = [
         "date": "20 October 2025",
         "image": "/story_9_thumbnail.png",
         "estimatedTime": "100 min"
-    }
+    },
+    {
+        "id": 10,
+        "title": "Juan Carlos en Barcelona",
+        "description": "Juan Carlos es un médico de Chile que está en Barcelona para trabajar en un hospital. Un día, mientras camina por el centro, pregunta direcciones a Plaza de España. Le recomiendan coger el metro en Plaza Cataluña. En la entrada del metro, otro transeúnte le explica cómo tomar la línea roja dirección Hospital de Bellvitge. Le informan sobre el billete sencillo de 2,15 euros y la tarjeta T-10 de nueve euros para diez viajes. Agradecido, Juan Carlos se despide y sube al metro rumbo a su nuevo hospital.",
+        "level": "A1.2",
+        "date": "23 October 2025",
+        "image": "/story_10_thumbnail.png",
+        "estimatedTime": "100 min"
+    },
 
 
 
