@@ -1,3 +1,9 @@
+export { lesson_2_grammar } from "./lesson_2";
+export { lesson_3_grammar } from "./lesson_3";
+export { lesson_4_grammar } from "./lesson_4";
+export { lesson_6_grammar } from "./lesson_6";
+export { lesson_7_grammar } from "./lesson_7";
+export { lesson_8_grammar } from "./lesson_8";
 export { lesson_9_grammar } from "./lesson_9";
 export { lesson_10_grammar } from "./lesson_10";
 export { lesson_11_grammar } from "./lesson_11";

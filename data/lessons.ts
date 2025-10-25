@@ -1,5 +1,11 @@
 import type { LessonContent } from "@/types/lesson";
 import {
+  lesson_2_grammar,
+  lesson_3_grammar,
+  lesson_4_grammar,
+  lesson_6_grammar,
+  lesson_7_grammar,
+  lesson_8_grammar,
   lesson_9_grammar,
   lesson_10_grammar,
   lesson_11_grammar,
@@ -61,7 +67,8 @@ export const lessons: LessonContent[] = [
     order: 2,
     estimatedTime: 75,
     vocabulary: lesson_2_vocab,
-    grammarPdfUrl: "/pdfs/grammar/lesson-2-grammar.pdf",
+    // grammarPdfUrl: "/pdfs/grammar/lesson-2-grammar.pdf",
+    grammarPageContent: lesson_2_grammar
   },
   {
     id: "lesson-3",
@@ -77,7 +84,8 @@ export const lessons: LessonContent[] = [
     order: 2,
     estimatedTime: 105,
     vocabulary: lesson_3_vocab,
-    grammarPdfUrl: "/pdfs/grammar/lesson-3-grammar.pdf",
+    // grammarPdfUrl: "/pdfs/grammar/lesson-3-grammar.pdf",
+    grammarPageContent: lesson_3_grammar
   },
   {
     id: "lesson-4",
@@ -93,7 +101,8 @@ export const lessons: LessonContent[] = [
     order: 2,
     estimatedTime: 115,
     vocabulary: lesson_4_vocab,
-    grammarPdfUrl: "/pdfs/grammar/lesson-4-grammar.pdf",
+    // grammarPdfUrl: "/pdfs/grammar/lesson-4-grammar.pdf",
+    grammarPageContent: lesson_4_grammar
   },
   {
     id: "lesson-5",
@@ -125,7 +134,7 @@ export const lessons: LessonContent[] = [
     order: 2,
     estimatedTime: 55,
     vocabulary: lesson_6_vocab,
-    grammarPdfUrl: "/pdfs/grammar/lesson-6-grammar.pdf",
+    grammarPageContent: lesson_6_grammar
   },
   {
     id: "lesson-7",
@@ -141,7 +150,7 @@ export const lessons: LessonContent[] = [
     order: 7,
     estimatedTime: 70,
     vocabulary: lesson_7_vocab,
-    grammarPdfUrl: "/pdfs/grammar/lesson-7-grammar.pdf",
+    grammarPageContent: lesson_7_grammar
   },
   {
     id: "lesson-8",
@@ -157,7 +166,7 @@ export const lessons: LessonContent[] = [
     order: 7,
     estimatedTime: 70,
     vocabulary: lesson_8_vocab,
-    grammarPdfUrl: "/pdfs/grammar/lesson-8-grammar.pdf",
+    grammarPageContent: lesson_8_grammar
   },
   {
     id: "lesson-9",
