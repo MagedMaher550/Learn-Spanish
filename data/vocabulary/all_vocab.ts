@@ -16,6 +16,7 @@ import {
     lesson_14_vocab,
     lesson_15_vocab,
     lesson_16_vocab,
+    lesson_17_vocab,
 } from './index'
 
 
@@ -37,6 +38,7 @@ const all_vocab = [
     ...lesson_14_vocab,
     ...lesson_15_vocab,
     ...lesson_16_vocab,
+    ...lesson_17_vocab,
 ]
 
 // Remove duplicates by `spanish`

@@ -14,6 +14,7 @@ import {
   lesson_14_grammar,
   lesson_15_grammar,
   lesson_16_grammar,
+  lesson_17_grammar,
 } from "./grammarPages";
 import {
   lesson_1_vocab,
@@ -32,6 +33,7 @@ import {
   lesson_14_vocab,
   lesson_15_vocab,
   lesson_16_vocab,
+  lesson_17_vocab,
 } from './vocabulary'
 import paragraphs from "./paragraphs";
 
@@ -301,7 +303,26 @@ export const lessons: LessonContent[] = [
     vocabulary: lesson_16_vocab,
     grammarPageContent: lesson_16_grammar,
     paragraphs: [...paragraphs.filter((p) => p.id === 10)]
+  },
+  {
+    "id": "lesson-18",
+    "title": {
+      "english": "Comparisons and Describing Places and Locations",
+      "arabic": "المقارنة ووصف الأماكن والمواقع"
+    },
+    "description": {
+      "english": "Learn how to compare people, things, and places in Spanish using comparative structures like 'más... que', 'menos... que', and 'tan... como'. Also, master how to describe locations with prepositions such as 'en', 'cerca de', 'lejos de', 'delante de', and 'detrás de'. Practice both skills in real-life contexts and dialogues.",
+      "arabic": "تعلّم كيف تقارن بين الأشخاص والأشياء والأماكن بالإسبانية باستخدام تراكيب المقارنة مثل 'más... que' (أكثر من)، و'menos... que' (أقل من)، و'tan... como' (مثل). وتدرّب أيضًا على وصف المواقع باستخدام حروف الجر مثل 'en' (في)، 'cerca de' (بالقرب من)، 'lejos de' (بعيد عن)، 'delante de' (أمام)، و'detrás de' (خلف). طبّق المهارتين في سياقات وحوارات واقعية."
+    },
+    "level": "A1.2",
+    "order": 17,
+    "estimatedTime": 80,
+    vocabulary: lesson_17_vocab,
+    grammarPageContent: lesson_17_grammar,
+    paragraphs: [...paragraphs.filter((p) => p.id === 11 || p.id === 12)]
+
   }
+  
 
 
 ];

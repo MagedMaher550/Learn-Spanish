@@ -12,3 +12,4 @@ export { lesson_13_grammar } from "./lesson_13";
 export { lesson_14_grammar } from "./lesson_14";
 export { lesson_15_grammar } from "./lesson_15";
 export { lesson_16_grammar } from "./lesson_16";
+export { lesson_17_grammar } from "./lesson_17";

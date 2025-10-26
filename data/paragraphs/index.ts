@@ -95,7 +95,24 @@ const paragraphs: Paragraph[] = [
         "image": "/story_10_thumbnail.png",
         "estimatedTime": "100 min"
     },
-
+    {
+        "id": 11,
+        "title": "Ana en la Ciudad de México",
+        "description": "Ana escribe a Juan Carlos desde la Ciudad de México, donde está muy contenta viviendo. Describe la ciudad como muy bonita y grande, pero vive lejos de su trabajo y todos los días toma varios autobuses. Explica que hay muchos medios de transporte: metro, tren ligero, metrobús, trolebús, microbús, camiones y ecobús. Lo más extraño para ella son los autobuses rosas del 'Programa Atenea', que son solo para mujeres y gratuitos para embarazadas y personas de la tercera edad. Finalmente, le pregunta a Juan Carlos cómo está en Barcelona y en el hospital.",
+        "level": "A1.2",
+        "date": "27 October 2025",
+        "image": "/story_11_thumbnail.png",
+        "estimatedTime": "95 min"
+    },
+    {
+        "id": 12,
+        "title": "Juan Carlos en Barcelona",
+        "description": "Juan Carlos responde a Ana desde Barcelona, donde comenta lo curioso que le parece el Programa Atenea de México. Explica que en Barcelona no tienen ecobús, pero sí tienen Bicing, un sistema público de bicicletas que le parece genial porque no contamina y es económico. Describe cómo hay muchas estaciones Bicing por toda la ciudad, la mayoría cerca de estaciones de metro, tren y aparcamientos públicos. Se sorprende de que él, que va al hospital en bicicleta, esté practicando deporte. Se despide rápidamente porque tiene que ir al hospital.",
+        "level": "A1.2",
+        "date": "27 October 2025",
+        "image": "/story_12_thumbnail.png",
+        "estimatedTime": "95 min"
+    }
 
 
 ];
