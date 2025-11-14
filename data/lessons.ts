@@ -15,6 +15,7 @@ import {
   lesson_15_grammar,
   lesson_16_grammar,
   lesson_17_grammar,
+  lesson_18_grammar,
 } from "./grammarPages";
 import {
   lesson_1_vocab,
@@ -34,6 +35,7 @@ import {
   lesson_15_vocab,
   lesson_16_vocab,
   lesson_17_vocab,
+  lesson_18_vocab
 } from './vocabulary'
 import paragraphs from "./paragraphs";
 
@@ -305,7 +307,7 @@ export const lessons: LessonContent[] = [
     paragraphs: [...paragraphs.filter((p) => p.id === 10)]
   },
   {
-    "id": "lesson-18",
+    "id": "lesson-17",
     "title": {
       "english": "Comparisons and Describing Places and Locations",
       "arabic": "المقارنة ووصف الأماكن والمواقع"
@@ -321,8 +323,25 @@ export const lessons: LessonContent[] = [
     grammarPageContent: lesson_17_grammar,
     paragraphs: [...paragraphs.filter((p) => p.id === 11 || p.id === 12)]
 
+  },
+  {
+    "id": "lesson-18",
+    "title": {
+      "english": "Telling time and the irregular verbs of present simple",
+      "arabic": "الوقت والأفعال الغير منتظمة في المضارع البسيط"
+    },
+    "description": {
+      "english": "Learn how to tell time in Spanish using the 12-hour clock system. Also, master the irregular verbs of present simple in Spanish.",
+      "arabic": "تعلّم كيفية قول الوقت بالإسبانية باستخدام نظام الساعة 12 ساعة. وتدرّب أيضًا على الأفعال الغير منتظمة في المضارع البسيط بالإسبانية."
+    },
+    "level": "A1.3",
+    "order": 17,
+    "estimatedTime": 80,
+    vocabulary: lesson_18_vocab,
+    grammarPageContent: lesson_18_grammar,
+
   }
-  
+
 
 
 ];
