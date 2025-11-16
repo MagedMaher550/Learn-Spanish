@@ -16,6 +16,7 @@ import {
   lesson_16_grammar,
   lesson_17_grammar,
   lesson_18_grammar,
+  lesson_19_grammar,
 } from "./grammarPages";
 import {
   lesson_1_vocab,
@@ -35,7 +36,8 @@ import {
   lesson_15_vocab,
   lesson_16_vocab,
   lesson_17_vocab,
-  lesson_18_vocab
+  lesson_18_vocab,
+  lesson_19_vocab
 } from './vocabulary'
 import paragraphs from "./paragraphs";
 
@@ -339,8 +341,23 @@ export const lessons: LessonContent[] = [
     "estimatedTime": 80,
     vocabulary: lesson_18_vocab,
     grammarPageContent: lesson_18_grammar,
-
-  }
+  },
+  {
+    "id": "lesson-19",
+    "title": {
+      "english": "Irregular verbs of present simple and days of the week",
+      "arabic": "الأفعال الغير منتظمة في المضارع البسيط وأيام الأسبوع"
+    },
+    "description": {
+      "english": "Learn the irregular verbs of present simple and the days of the week in Spanish.",
+      "arabic": "تعلّم الأفعال الغير منتظمة في المضارع البسيط وأيام الأسبوع بالإسبانية."
+    },
+    "level": "A1.3",
+    "order": 17,
+    "estimatedTime": 80,
+    vocabulary: lesson_19_vocab,
+    grammarPageContent: lesson_19_grammar,
+  },
 
 
 

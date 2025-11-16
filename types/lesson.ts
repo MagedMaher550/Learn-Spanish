@@ -50,14 +50,14 @@ export interface LessonContent {
     english: string
     arabic: string
   }
-  level: "A1.1" | "A1.2" | "A2.1" | "A2.2"
+  level: "A1.1" | "A1.2" | "A1.3" | "A1.4" | "A2.1" | "A2.2" | "A2.3" | "A2.4"
   order: number
   estimatedTime: number // in minutes
   vocabulary: Vocabulary[]
   audioUrl?: string
   videoUrl?: string
-  grammarPdfUrl?: string 
-  grammarPageContent?: React.ComponentType; 
+  grammarPdfUrl?: string
+  grammarPageContent?: React.ComponentType;
   paragraphs?: Paragraph[]
 }
 
