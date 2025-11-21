@@ -17,6 +17,7 @@ import {
   lesson_17_grammar,
   lesson_18_grammar,
   lesson_19_grammar,
+  lesson_20_grammar,
 } from "./grammarPages";
 import {
   lesson_1_vocab,
@@ -37,7 +38,8 @@ import {
   lesson_16_vocab,
   lesson_17_vocab,
   lesson_18_vocab,
-  lesson_19_vocab
+  lesson_19_vocab,
+  lesson_20_vocab
 } from './vocabulary'
 import paragraphs from "./paragraphs";
 
@@ -357,6 +359,24 @@ export const lessons: LessonContent[] = [
     "estimatedTime": 80,
     vocabulary: lesson_19_vocab,
     grammarPageContent: lesson_19_grammar,
+  },
+  {
+    "id": "lesson-20",
+    "title": {
+      "english": "Frequency and time",
+      "arabic": "التكرار والوقت"
+    },
+    "description": {
+      "english": "Learn how to express frequency and time in Spanish.",
+      "arabic": "تعلّم كيفية التعبير عن التكرار والوقت بالإسبانية."
+    },
+    "level": "A1.3",
+    "order": 17,
+    "estimatedTime": 45,
+    vocabulary: lesson_20_vocab,
+    grammarPageContent: lesson_20_grammar,
+    paragraphs: [...paragraphs.filter((p) => p.id === 13)]
+
   },
 
 

@@ -15,3 +15,4 @@ export { lesson_16_grammar } from "./lesson_16";
 export { lesson_17_grammar } from "./lesson_17";
 export { lesson_18_grammar } from "./lesson_18";
 export { lesson_19_grammar } from "./lesson_19";
+export { lesson_20_grammar } from "./lesson_20";

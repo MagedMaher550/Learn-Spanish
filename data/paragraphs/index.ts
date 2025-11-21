@@ -112,6 +112,15 @@ const paragraphs: Paragraph[] = [
         "date": "27 October 2025",
         "image": "/story_12_thumbnail.png",
         "estimatedTime": "95 min"
+    },
+    {
+        "id": 13,
+        "title": "Los españoles y su día a día",
+        "description": "Los españoles son muy diferentes entre sí. Algunos se levantan temprano por la mañana, otros salen de noche todos los días. Muchos no van a los toros, pero muchos sí. Y la mayoría de los españoles ven la televisión por la noche. Algunos se levantan temprano por la mañana, otros salen de noche todos los días. Muchos no van a los toros, pero muchos sí. Y la mayoría de los españoles ven la televisión por la noche.",
+        "level": "A1.2",
+        "date": "22 November 2025",
+        "image": "/story_13_thumbnail.png",
+        "estimatedTime": "55 min"
     }
 
 
