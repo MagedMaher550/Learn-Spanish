@@ -39,7 +39,8 @@ import {
   lesson_17_vocab,
   lesson_18_vocab,
   lesson_19_vocab,
-  lesson_20_vocab
+  lesson_20_vocab,
+  lesson_21_vocab
 } from './vocabulary'
 import paragraphs from "./paragraphs";
 
@@ -376,6 +377,24 @@ export const lessons: LessonContent[] = [
     vocabulary: lesson_20_vocab,
     grammarPageContent: lesson_20_grammar,
     paragraphs: [...paragraphs.filter((p) => p.id === 13)]
+
+  },
+  {
+    "id": "lesson-21",
+    "title": {
+      "english": "Food and Drinks",
+      "arabic": "الطعام والمشروبات"
+    },
+    "description": {
+      "english": "Learn how to talk about food and drinks in Spanish.",
+      "arabic": "تعلّم كيفية التحدث عن الطعام والمشروبات بالإسبانية."
+    },
+    "level": "A1.3",
+    "order": 17,
+    "estimatedTime": 165,
+    vocabulary: lesson_21_vocab,
+    // grammarPageContent: lesson_20_grammar,
+    // paragraphs: [...paragraphs.filter((p) => p.id === 13)]
 
   },
 
