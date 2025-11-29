@@ -1,0 +1,128 @@
+// story_14_content.ts
+import { story_14_words } from "./story_14_words";
+
+export const story_14_content = {
+    id: "story_14",
+    title: "La Gastronomía en Egipto",
+    arTitle: "المأكولات في مصر",
+    level: "A1.2",
+    image: "/story_14_thumbnail.png",
+    fullAudio: "/audio/stories/story_14/full_story.mp3",
+
+    sentences: [
+        {
+            spanish: "La gastronomía en Egipto es muy rica y muy popular.",
+            english: "The gastronomy in Egypt is very rich and very popular.",
+            arabic: "المأكولات في مصر غنية جداً وشعبية جداً.",
+            words: ["La", "gastronomía", "en", "Egipto", "es", "muy", "rica", "y", "muy", "popular"],
+            audio: "/audio/stories/story_14/s1.mp3",
+        },
+        {
+            spanish: "La comida tiene sabores simples y tradicionales.",
+            english: "The food has simple and traditional flavors.",
+            arabic: "الطعام له نكهات بسيطة وتقليدية.",
+            words: ["La", "comida", "tiene", "sabores", "simples", "y", "tradicionales"],
+            audio: "/audio/stories/story_14/s2.mp3",
+        },
+        {
+            spanish: "Muchas familias cocinan platos que pasan de generación en generación.",
+            english: "Many families cook dishes that pass from generation to generation.",
+            arabic: "العديد من العائلات تطبخ أطباقاً تنتقل من جيل إلى جيل.",
+            words: ["Muchas", "familias", "cocinan", "platos", "que", "pasan", "de", "generación", "en", "generación"],
+            audio: "/audio/stories/story_14/s3.mp3",
+        },
+        {
+            spanish: "Uno de los platos más conocidos es el koshari.",
+            english: "One of the most well-known dishes is koshari.",
+            arabic: "أحد أشهر الأطباق هو الكشري.",
+            words: ["Uno", "de", "los", "platos", "más", "conocidos", "es", "el", "koshari"],
+            audio: "/audio/stories/story_14/s4.mp3",
+        },
+        {
+            spanish: "Es una mezcla de arroz, pasta y lentejas con salsa de tomate.",
+            english: "It is a mixture of rice, pasta and lentils with tomato sauce.",
+            arabic: "إنه خليط من الأرز والمعكرونة والعدس مع صلصة الطماطم.",
+            words: ["Es", "una", "mezcla", "de", "arroz", "pasta", "y", "lentejas", "con", "salsa", "de", "tomate"],
+            audio: "/audio/stories/story_14/s5.mp3",
+        },
+        {
+            spanish: "Es un plato barato y muy común en las calles.",
+            english: "It is a cheap dish and very common in the streets.",
+            arabic: "إنه طبق رخيص وشائع جداً في الشوارع.",
+            words: ["Es", "un", "plato", "barato", "y", "muy", "común", "en", "las", "calles"],
+            audio: "/audio/stories/story_14/s6.mp3",
+        },
+        {
+            spanish: "Otro plato famoso es el ful medames.",
+            english: "Another famous dish is ful medames.",
+            arabic: "طبق مشهور آخر هو الفول المدمس.",
+            words: ["Otro", "plato", "famoso", "es", "el", "ful", "medames"],
+            audio: "/audio/stories/story_14/s7.mp3",
+        },
+        {
+            spanish: "Es un plato de habas que se come mucho en el desayuno.",
+            english: "It is a dish of fava beans that is eaten a lot for breakfast.",
+            arabic: "إنه طبق من الفول يؤكل كثيراً في الإفطار.",
+            words: ["Es", "un", "plato", "de", "habas", "que", "se", "come", "mucho", "en", "el", "desayuno"],
+            audio: "/audio/stories/story_14/s8.mp3",
+        },
+        {
+            spanish: "También es normal comer taameya, una croqueta de habas parecida al falafel.",
+            english: "It is also normal to eat taameya, a fava bean croquette similar to falafel.",
+            arabic: "من المعتاد أيضاً أكل الطعمية، كروكيت من الفول يشبه الفلافل.",
+            words: ["También", "es", "normal", "comer", "taameya", "una", "croqueta", "de", "habas", "parecida", "al", "falafel"],
+            audio: "/audio/stories/story_14/s9.mp3",
+        },
+        {
+            spanish: "En Egipto, el pan es muy importante.",
+            english: "In Egypt, bread is very important.",
+            arabic: "في مصر، الخبز مهم جداً.",
+            words: ["En", "Egipto", "el", "pan", "es", "muy", "importante"],
+            audio: "/audio/stories/story_14/s10.mp3",
+        },
+        {
+            spanish: "El pan tradicional se llama aish baladi y acompaña casi todas las comidas.",
+            english: "The traditional bread is called aish baladi and accompanies almost all meals.",
+            arabic: "الخبز التقليدي يسمى عيش بلدي ويُرافق几乎 جميع الوجبات.",
+            words: ["El", "pan", "tradicional", "se", "llama", "aish", "baladi", "y", "acompaña", "casi", "todas", "las", "comidas"],
+            audio: "/audio/stories/story_14/s11.mp3",
+        },
+        {
+            spanish: "Las especias no son muy fuertes, pero dan un sabor especial.",
+            english: "The spices are not very strong, but they give a special flavor.",
+            arabic: "التوابل ليست قوية جداً، لكنها تعطي نكهة خاصة.",
+            words: ["Las", "especias", "no", "son", "muy", "fuertes", "pero", "dan", "un", "sabor", "especial"],
+            audio: "/audio/stories/story_14/s12.mp3",
+        },
+        {
+            spanish: "Muchas personas toman té o café después de comer.",
+            english: "Many people drink tea or coffee after eating.",
+            arabic: "الكثير من الناس يشربون الشاي أو القهوة بعد الأكل.",
+            words: ["Muchas", "personas", "toman", "té", "o", "café", "después", "de", "comer"],
+            audio: "/audio/stories/story_14/s13.mp3",
+        },
+        {
+            spanish: "La comida en Egipto muestra la vida diaria del país: simple, cálida y llena de tradición.",
+            english: "The food in Egypt shows the daily life of the country: simple, warm and full of tradition.",
+            arabic: "الطعام في مصر يظهر الحياة اليومية للبلاد: بسيطة، دافئة ومليئة بالتقاليد.",
+            words: ["La", "comida", "en", "Egipto", "muestra", "la", "vida", "diaria", "del", "país", "simple", "cálida", "y", "llena", "de", "tradición"],
+            audio: "/audio/stories/story_14/s14.mp3",
+        },
+        {
+            spanish: "Para muchas personas, comer juntos es una parte importante de la familia y la cultura.",
+            english: "For many people, eating together is an important part of family and culture.",
+            arabic: "بالنسبة للكثير من الناس، الأكل معاً هو جزء مهم من العائلة والثقافة.",
+            words: ["Para", "muchas", "personas", "comer", "juntos", "es", "una", "parte", "importante", "de", "la", "familia", "y", "la", "cultura"],
+            audio: "/audio/stories/story_14/s15.mp3",
+        },
+        {
+            spanish: "Por eso, la gastronomía egipcia no es solo comida; es también una forma de compartir y disfrutar el tiempo con otros.",
+            english: "That's why Egyptian gastronomy is not just food; it is also a way of sharing and enjoying time with others.",
+            arabic: "لهذا السبب، المأكولات المصرية ليست مجرد طعام؛ إنها أيضاً طريقة للمشاركة والاستمتاع بالوقت مع الآخرين.",
+            words: ["Por", "eso", "la", "gastronomía", "egipcia", "no", "es", "solo", "comida", "es", "también", "una", "forma", "de", "compartir", "y", "disfrutar", "el", "tiempo", "con", "otros"],
+            audio: "/audio/stories/story_14/s16.mp3",
+        },
+    ],
+
+    vocabulary: Object.keys(story_14_words),
+};

@@ -11,6 +11,9 @@ import { story_10 } from "./story_10";
 import { story_11 } from "./story_11";
 import { story_12 } from "./story_12";
 import { story_13 } from "./story_13";
+import { story_14 } from "./story_14";
+import { story_15 } from "./story_15";
+import { story_16 } from "./story_16";
 
 const stories = {
     1: story_1,
@@ -26,6 +29,9 @@ const stories = {
     11: story_11,
     12: story_12,
     13: story_13,
+    14: story_14,
+    15: story_15,
+    16: story_16,
 }
 
 export default stories

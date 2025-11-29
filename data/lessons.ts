@@ -18,6 +18,7 @@ import {
   lesson_18_grammar,
   lesson_19_grammar,
   lesson_20_grammar,
+  lesson_22_grammar,
 } from "./grammarPages";
 import {
   lesson_1_vocab,
@@ -40,7 +41,8 @@ import {
   lesson_18_vocab,
   lesson_19_vocab,
   lesson_20_vocab,
-  lesson_21_vocab
+  lesson_21_vocab,
+  lesson_22_vocab
 } from './vocabulary'
 import paragraphs from "./paragraphs";
 
@@ -394,8 +396,24 @@ export const lessons: LessonContent[] = [
     "estimatedTime": 165,
     vocabulary: lesson_21_vocab,
     // grammarPageContent: lesson_20_grammar,
-    // paragraphs: [...paragraphs.filter((p) => p.id === 13)]
-
+    paragraphs: [...paragraphs.filter((p) => p.id === 14)]
+  },
+  {
+    "id": "lesson-22",
+    "title": {
+      "english": "Emotional Verbs",
+      "arabic": "الأفعال العاطفية"
+    },
+    "description": {
+      "english": "Learn how to express emotions, preferences, and reactions using verbs like gustar.",
+      "arabic": "تعلّم كيفية التعبير عن المشاعر، التفضيلات، وردود الفعل باستخدام أفعال مثل gustar."
+    },
+    "level": "A1.3",
+    "order": 17,
+    "estimatedTime": 65,
+    vocabulary: lesson_22_vocab,
+    grammarPageContent: lesson_22_grammar,
+    paragraphs: [...paragraphs.filter((p) => p.id === 15 || p.id === 16)]
   },
 
 

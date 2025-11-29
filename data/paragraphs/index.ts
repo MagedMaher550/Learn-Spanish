@@ -121,7 +121,35 @@ const paragraphs: Paragraph[] = [
         "date": "22 November 2025",
         "image": "/story_13_thumbnail.png",
         "estimatedTime": "55 min"
+    },
+    {
+        "id": 14,
+        "title": "La gastronomía egipcia",
+        "description": "La gastronomía en Egipto es muy rica y popular con sabores simples y tradicionales. Muchas familias cocinan platos que pasan de generación en generación como el koshari, una mezcla de arroz, pasta y lentejas con salsa de tomate. Otros platos famosos incluyen el ful medames para el desayuno y la taameya. El pan tradicional aish baladi acompaña casi todas las comidas. Las especias no son muy fuertes pero dan un sabor especial. Para los egipcios, comer juntos es una parte importante de la familia y la cultura.",
+        "level": "A1.3",
+        "date": "27 November 2025",
+        "image": "/story_14_thumbnail.jpg",
+        "estimatedTime": "50 min"
+    },
+    {
+        "id": 15,
+        "title": "Ana y Luis Felipe: Culturas Diferentes",
+        "description": "Ana es española y sale con Luis Felipe, un chico colombiano. Aunque se llevan muy bien, tienen culturas y gustos muy distintos. Luis Felipe es muy moderno y prefiere ver series por Internet, mientras que Ana prefiere la televisión y películas en 3D. Ambos disfrutan salir por las tardes. También tienen diferencias con la comida: a Luis Felipe le gustan los fríjoles y la comida colombiana, mientras que Ana la encuentra un poco pesada. Sin embargo, ambos se adaptan y aprenden de la cultura del otro, creando una relación bonita a pesar de sus diferencias.",
+        "level": "A1.3",
+        "date": "29 November 2025",
+        "image": "/story_15_thumbnail.png",
+        "estimatedTime": "45 min"
+    },
+    {
+        "id": 16,
+        "title": "María y Juan: Diferencias en Aficiones",
+        "description": "María es argentina y tiene un amigo, Juan, que es mexicano. Aunque son buenos amigos, tienen aficiones muy distintas. María disfruta mucho leer libros y escuchar música clásica, mientras que Juan prefiere jugar videojuegos y ver series de acción. También tienen diferencias al elegir comidas: a Juan le encanta la comida picante mexicana, mientras que María prefiere platos más suaves. A pesar de estas diferencias, comparten tiempo juntos los fines de semana y aprenden a respetar los gustos del otro, fortaleciendo su amistad.",
+        "level": "A1.3",
+        "date": "29 November 2025",
+        "image": "/story_16_thumbnail.png",
+        "estimatedTime": "45 min"
     }
+    
 
 
 ];
