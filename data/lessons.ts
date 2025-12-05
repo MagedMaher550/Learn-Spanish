@@ -42,7 +42,8 @@ import {
   lesson_19_vocab,
   lesson_20_vocab,
   lesson_21_vocab,
-  lesson_22_vocab
+  lesson_22_vocab,
+  lesson_23_vocab
 } from './vocabulary'
 import paragraphs from "./paragraphs";
 
@@ -414,6 +415,22 @@ export const lessons: LessonContent[] = [
     vocabulary: lesson_22_vocab,
     grammarPageContent: lesson_22_grammar,
     paragraphs: [...paragraphs.filter((p) => p.id === 15 || p.id === 16)]
+  },
+  {
+    "id": "lesson-23",
+    "title": {
+      "english": "Body Parts",
+      "arabic": "أجزاء الجسم"
+    },
+    "description": {
+      "english": "Learn how to describe body parts in Spanish.",
+      "arabic": "تعلّم كيفية وصف أجزاء الجسم بالإسبانية."
+    },
+    "level": "A1.3",
+    "order": 17,
+    "estimatedTime": 65,
+    vocabulary: lesson_23_vocab,
+    paragraphs: [...paragraphs.filter((p) => p.id === 17)]
   },
 
 

@@ -148,7 +148,16 @@ const paragraphs: Paragraph[] = [
         "date": "29 November 2025",
         "image": "/story_16_thumbnail.png",
         "estimatedTime": "45 min"
-    }
+    },
+    {
+        "id": 17,
+        "title": "Comidas en España y Latinoamérica",
+        "description": "En España la primera comida del día -el desayuno- no es muy abundante. La mayoría de la gente toma café con leche, tostadas, algún bollo o galletas. El horario depende de la hora de levantarse: puede ir desde las 6 hasta las 9 de la mañana. En Latinoamérica, la primera comida del día -el desayuno- es más abundante. La mayoría de la gente toma café con leche, tostadas, algún bollo o galletas. El horario depende de la hora de levantarse: puede ir desde las 6 hasta las 9 de la mañana.",
+        "level": "A1.3",
+        "date": "5 December 2025",
+        "image": "/story_17_thumbnail.png",
+        "estimatedTime": "45 min"
+    },
     
 
 

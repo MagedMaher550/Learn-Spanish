@@ -20,6 +20,7 @@ import lesson_19_vocab from "./lesson_19";
 import lesson_20_vocab from "./lesson_20";
 import lesson_21_vocab from "./lesson_21";
 import lesson_22_vocab from "./lesson_22";
+import lesson_23_vocab from "./lesson_23";
 
 
 export {
@@ -45,4 +46,5 @@ export {
     lesson_20_vocab,
     lesson_21_vocab,
     lesson_22_vocab,
+    lesson_23_vocab,
 }
