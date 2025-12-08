@@ -43,7 +43,8 @@ import {
   lesson_20_vocab,
   lesson_21_vocab,
   lesson_22_vocab,
-  lesson_23_vocab
+  lesson_23_vocab,
+  lesson_24_vocab
 } from './vocabulary'
 import paragraphs from "./paragraphs";
 
@@ -414,7 +415,7 @@ export const lessons: LessonContent[] = [
     "estimatedTime": 65,
     vocabulary: lesson_22_vocab,
     grammarPageContent: lesson_22_grammar,
-    paragraphs: [...paragraphs.filter((p) => p.id === 15 || p.id === 16)]
+    paragraphs: [...paragraphs.filter((p) => p.id === 15 || p.id === 16 || p.id === 17)]
   },
   {
     "id": "lesson-23",
@@ -430,6 +431,22 @@ export const lessons: LessonContent[] = [
     "order": 17,
     "estimatedTime": 65,
     vocabulary: lesson_23_vocab,
+    // paragraphs: [...paragraphs.filter((p) => p.id === 17)]
+  },
+  {
+    "id": "lesson-24",
+    "title": {
+      "english": "Health and Symptoms",
+      "arabic": "الصحة والأعراض"
+    },
+    "description": {
+      "english": "Learn how to describe health and symptoms in Spanish.",
+      "arabic": "تعلّم كيفية وصف الصحة والأعراض بالإسبانية."
+    },
+    "level": "A1.3",
+    "order": 17,
+    "estimatedTime": 65,
+    vocabulary: lesson_24_vocab,
     paragraphs: [...paragraphs.filter((p) => p.id === 17)]
   },
 

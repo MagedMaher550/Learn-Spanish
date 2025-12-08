@@ -1,0 +1,76 @@
+export const lesson_24_vocab = [
+  // HEALTH STATES
+  { "spanish": "Enfermo", "english": "Sick", "arabic": "مريض", "pronunciation": "en-FER-moh" },
+  { "spanish": "Resfriado", "english": "With a cold", "arabic": "نزلة برد", "pronunciation": "res-free-AH-doh" },
+  { "spanish": "Mareado", "english": "Dizzy", "arabic": "دوخة", "pronunciation": "mah-reh-AH-doh" },
+  { "spanish": "Cansado", "english": "Tired", "arabic": "تعبان", "pronunciation": "kan-SAH-doh" },
+  { "spanish": "Débil", "english": "Weak", "arabic": "ضعيف", "pronunciation": "DEH-beel" },
+  { "spanish": "Alergico", "english": "Allergic", "arabic": "عنده حساسية", "pronunciation": "ah-LEHR-hee-koh" },
+  { "spanish": "Estresado", "english": "Stressed", "arabic": "مضغوط", "pronunciation": "es-tre-SAH-doh" },
+  { "spanish": "Agotado", "english": "Exhausted", "arabic": "مرهق", "pronunciation": "ah-goh-TAH-doh" },
+  { "spanish": "Congestionado", "english": "Congested", "arabic": "محتقن", "pronunciation": "kon-hes-tyo-NAH-doh" },
+  { "spanish": "Infectado", "english": "Infected", "arabic": "مصاب بعدوى", "pronunciation": "in-fek-TAH-doh" },
+
+  // SYMPTOMS
+  { "spanish": "Gripe", "english": "Flu", "arabic": "إنفلونزا", "pronunciation": "GREE-peh" },
+  { "spanish": "Fiebre", "english": "Fever", "arabic": "حمّى", "pronunciation": "FYEH-breh" },
+  { "spanish": "Tos", "english": "Cough", "arabic": "سعال", "pronunciation": "tos" },
+  { "spanish": "Estornudo", "english": "Sneeze", "arabic": "عطسة", "pronunciation": "es-tor-NOO-doh" },
+  { "spanish": "Dolor", "english": "Pain", "arabic": "ألم", "pronunciation": "doh-LOR" },
+  { "spanish": "Migraña", "english": "Migraine", "arabic": "صداع نصفي", "pronunciation": "mee-GRAH-nyah" },
+  { "spanish": "Jaqueca", "english": "Strong headache", "arabic": "صداع شديد", "pronunciation": "hah-KEH-kah" },
+  { "spanish": "Nauseas", "english": "Nausea", "arabic": "غثيان", "pronunciation": "NOW-seh-as" },
+  { "spanish": "Vómitos", "english": "Vomiting", "arabic": "قيء", "pronunciation": "BOH-mee-tohs" },
+  { "spanish": "Diarrea", "english": "Diarrhea", "arabic": "إسهال", "pronunciation": "dee-ah-REH-ah" },
+  { "spanish": "Escalofríos", "english": "Chills", "arabic": "قشعريرة", "pronunciation": "es-kah-lo-FREE-ohs" },
+  { "spanish": "Fatiga", "english": "Fatigue", "arabic": "إرهاق", "pronunciation": "fah-TEE-gah" },
+  { "spanish": "Presión Alta", "english": "High blood pressure", "arabic": "ضغط مرتفع", "pronunciation": "preh-SYON AHL-tah" },
+  { "spanish": "Presión Baja", "english": "Low blood pressure", "arabic": "ضغط منخفض", "pronunciation": "preh-SYON BAH-hah" },
+  { "spanish": "Inflamación", "english": "Inflammation", "arabic": "التهاب", "pronunciation": "een-flah-mah-SYON" },
+  { "spanish": "Comezón", "english": "Itching", "arabic": "حكة", "pronunciation": "koh-meh-THON" },
+  { "spanish": "Congestión", "english": "Congestion", "arabic": "احتقان", "pronunciation": "kon-hes-TYON" },
+  { "spanish": "Dificultad para respirar", "english": "Difficulty breathing", "arabic": "صعوبة في التنفس", "pronunciation": "dee-fee-kool-TAD pah-rah res-pee-RAR" },
+  { "spanish": "Sudor frío", "english": "Cold sweat", "arabic": "عرق بارد", "pronunciation": "soo-DOR FREE-oh" },
+
+  // ACTIONS & VERBS
+  { "spanish": "Toser", "english": "To cough", "arabic": "يسعل", "pronunciation": "toh-SER" },
+  { "spanish": "Estornudar", "english": "To sneeze", "arabic": "يعطس", "pronunciation": "es-tor-noo-DAR" },
+  { "spanish": "Vómitar", "english": "To vomit", "arabic": "يتقيأ", "pronunciation": "boh-mee-TAR" },
+  { "spanish": "Respirar", "english": "To breathe", "arabic": "يتنفس", "pronunciation": "res-pee-RAR" },
+  { "spanish": "Doler", "english": "To hurt", "arabic": "يؤلم", "pronunciation": "doh-LER" },
+  { "spanish": "Descansar", "english": "To rest", "arabic": "يستريح", "pronunciation": "des-kan-SAR" },
+  { "spanish": "Mejorar", "english": "To improve", "arabic": "يتحسن", "pronunciation": "meh-hoh-RAR" },
+  { "spanish": "Empeorar", "english": "To get worse", "arabic": "يسوء", "pronunciation": "em-peh-oh-RAR" },
+  { "spanish": "Tomar medicina", "english": "To take medicine", "arabic": "يتناول دواء", "pronunciation": "toh-MAR meh-dee-SEE-nah" },
+  { "spanish": "Hidratarse", "english": "To hydrate", "arabic": "يرتوي", "pronunciation": "hee-drah-TAR-seh" },
+  { "spanish": "Cuidarse", "english": "To take care of oneself", "arabic": "يعتني بنفسه", "pronunciation": "kwee-DAR-seh" },
+  { "spanish": "Dormir", "english": "To sleep", "arabic": "ينام", "pronunciation": "dor-MEER" },
+
+  // TREATMENTS & REMEDIES
+  { "spanish": "Medicina", "english": "Medicine", "arabic": "دواء", "pronunciation": "meh-dee-SEE-nah" },
+  { "spanish": "Antibiótico", "english": "Antibiotic", "arabic": "مضاد حيوي", "pronunciation": "an-tee-byoh-TEE-koh" },
+  { "spanish": "Jarabe", "english": "Cough syrup", "arabic": "شراب سعال", "pronunciation": "hah-RAH-beh" },
+  { "spanish": "Pastilla", "english": "Pill", "arabic": "حبة دواء", "pronunciation": "pas-TEE-yah" },
+  { "spanish": "Vitamina", "english": "Vitamin", "arabic": "فيتامين", "pronunciation": "vee-tah-MEE-nah" },
+  { "spanish": "Remedios caseros", "english": "Home remedies", "arabic": "علاجات منزلية", "pronunciation": "reh-MEH-dyos kah-SEH-rohs" },
+  { "spanish": "Té caliente", "english": "Hot tea", "arabic": "شاي ساخن", "pronunciation": "teh kah-LYEN-teh" },
+  { "spanish": "Miel", "english": "Honey", "arabic": "عسل", "pronunciation": "MYEHL" },
+  { "spanish": "Inhalador", "english": "Inhaler", "arabic": "بخاخ", "pronunciation": "een-hah-lah-DOR" },
+  { "spanish": "Compresa fría", "english": "Cold compress", "arabic": "كمادة باردة", "pronunciation": "kom-PREH-sah FREE-ah" },
+  { "spanish": "Compresa caliente", "english": "Warm compress", "arabic": "كمادة دافئة", "pronunciation": "kom-PREH-sah kah-LYEN-teh" },
+  { "spanish": "Reposo", "english": "Rest", "arabic": "راحة", "pronunciation": "reh-POH-so" },
+
+  // MEDICAL CONTEXT
+  { "spanish": "El Médico", "english": "Doctor", "arabic": "طبيب", "pronunciation": "el MEH-dee-koh" },
+  { "spanish": "La Enfermera", "english": "Nurse", "arabic": "ممرضة", "pronunciation": "lah en-fer-MEH-rah" },
+  { "spanish": "La Clínica", "english": "Clinic", "arabic": "عيادة", "pronunciation": "lah KLEE-nee-kah" },
+  { "spanish": "La Farmacia", "english": "Pharmacy", "arabic": "صيدلية", "pronunciation": "far-MAH-syah" },
+  { "spanish": "La Receta", "english": "Prescription", "arabic": "وصفة طبية", "pronunciation": "reh-SEH-tah" },
+  { "spanish": "La Emergencia", "english": "Emergency", "arabic": "طوارئ", "pronunciation": "eh-mehr-HEN-syah" },
+  { "spanish": "La Consulta", "english": "Consultation", "arabic": "استشارة", "pronunciation": "kon-SOOL-tah" },
+  { "spanish": "El Paciente", "english": "Patient", "arabic": "مريض", "pronunciation": "pah-SYEN-teh" },
+  { "spanish": "El Síntoma", "english": "Symptom", "arabic": "عرض", "pronunciation": "SEEN-toh-mah" },
+  { "spanish": "El Tratamiento", "english": "Treatment", "arabic": "علاج", "pronunciation": "trah-tah-myEN-toh" }
+];
+
+export default lesson_24_vocab;

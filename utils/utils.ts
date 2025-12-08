@@ -3,10 +3,13 @@ import { Vocabulary } from "@/types/lesson"
 
 export function slugifyAudioFilename(phrase: string): string {
     return phrase
-        .normalize("NFD") // split accented chars
-        .replace(/[\u0300-\u036f]/g, "") // remove accents
-        .replace(/[¿¡?!"',.]/g, "") // remove punctuation
+        .normalize("NFD")                     // split accented chars
+        .replace(/[\u0300-\u036f]/g, "")     // remove accents
+        .replace(/[¿¡?!"',.]/g, "")          // remove punctuation
+        .replace(/\s+/g, "_")                // replace spaces with underscores
+        .replace(/[^a-zA-Z0-9_-]/g, "")     // remove any other invalid chars
         .trim()
+        .toLowerCase();                       // lowercase for consistency
 }
 
 
